@@ -4,7 +4,7 @@
 \input{../common/macros}
 
 \title{Problem 1: PPN and Gravitational Red Shift}
-\author{Ethan}
+\author{Ethan Harriman}
 \date{\today}
 
 \begin{document}
@@ -77,6 +77,36 @@ Explicity the four-velocity is
 
 \begin{equation}
     \boldsymbol{u}_{obs} = A(r)^{-\frac{1}{2}} \boldsymbol{\xi}.
+\end{equation}
+
+From this point forward we can exploit the symmetry of the spacetime, exactly as it is done in the Schwarzchild instance. We use (5) and evaluate using $r=R_{\oplus}$, where $R_{\oplus}$ is the radius of the Earth,
+
+\begin{equation}
+    \hbar \omega_{R_{\oplus}} = A(R)^{-\frac{1}{2}} \left(\boldsymbol{p} \cdot \boldsymbol{\xi}\right)|_{r=R_{\oplus}}.
+\end{equation}
+
+We also consider the distance observer, where for our purposes we let $r \rightarrow \infty$
+
+\begin{equation}
+    \hbar \omega_{\infty} = A(\infty)^{-\frac{1}{2}} \left(\boldsymbol{p} \cdot \boldsymbol{\xi}\right)|_{r \rightarrow \infty}.
+\end{equation}
+
+$A(\infty)$ reduces to unity which simplifies the expression. The Killing vectors permit us to exploit the conserved scalar product
+
+\begin{equation}
+    \boldsymbol{p} \cdot \boldsymbol{\xi} = \text{const},
+\end{equation}
+
+in order to relate the two frequencies. We use (13), simplified with the PPN coefficient reducing to unity, and insert the result into (12). This yields
+
+\begin{equation}
+   \hbar \omega_{R_{\oplus}} = A(R_{\oplus})^{-\frac{1}{2}}\hbar \omega_{\infty},
+\end{equation}
+
+and the gravitational red shift resolves to
+
+\begin{equation}
+   \frac{\omega_{\infty}}{\omega_{R_{\oplus}}} = A(R_{\oplus})^{\frac{1}{2}}.
 \end{equation}
 
 \end{document}
