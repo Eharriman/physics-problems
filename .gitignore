@@ -1,0 +1,10 @@
+out/
+*.aux
+*.log
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.out
+
+.vscode/
