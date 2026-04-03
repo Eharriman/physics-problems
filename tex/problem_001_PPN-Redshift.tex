@@ -10,13 +10,14 @@
 \begin{document}
 \maketitle
 
-\section*{Problem}
+\section{Problem}
 
 \textit{Question: Is the experiment of Vessot & Levine sensitive enough to say anything about the parameters $\beta$ and $\gamma$? Is the third-order doppler effect important in analyzing the experiment?}\footnote{Question 10.2 Hartle}\\
 
-
+\subsection{Introduction}
 This problem is an exercise in applying the Parameterized post-Newtonian framework to particular prediction. Specifically, by solving this problem, we can deduce whether the experimental results obtained by an experiment such as Vessot and Levine (1980) allows one to determine PPN parameters. Before presenting a solution to the problem, I will briefly sketch both the frequency shift predicted by the equivalence principle; the Vessot and Levine experiment; and the PPN framework.\\
 
+\subsection{The Gravitational Redshift}
 The gravitational frequency shift is a consequence of the Equivalence Principle. If it is accepted that uniformly frame is entirely equivalent to a uniform (or local) gravitational field, then it must be the case that the rates of emission and reception for spatially separated observers are different. That is to say that frequencies are shifted, preportional to the gravitational field strength. All theories of gravity that are reconciled with the Equivalence Principle—which is to say, all modern theories of gravity—will predict a gravitational frequency shift. The equivalence principle explicitly predicts that for a detector $B$ and an emitter $A$ the rates of emission and reception (i.e. frequencies $\omega_B$ and $\omega_A$) are related by the difference in the gravitational field strengths\footnote{See Hartle, 113-119}
 
 \begin{equation}
@@ -103,6 +104,8 @@ The Schwarzchild coefficient reduces to one in the limit where $r \rightarrow \i
 
 This result can be expanded in powers of $2M/R$ when that is small. The first order term recovers the redshift as prediced solely by the Equivalence Principle in ().\\
 
+\subsection{The Experiment of Vessot et al.}
+
 The predictions of the gravitational frequency shift have been tested experimentally to quite amazing degrees of accuracy. It is worth noting that these experiments do not stricly test General Relativity. In fact, that is the entire point of this problem. All theories of gravity, that are in agreement with the Equivalence Principle, predict the frequency shift. Thus, experiments such as those described below are really tests of the Equivalence Principle; they do not, in and of themselves, discriminate between different forms of metric theories of gravity.
 
 Vessot and Levin (1980)\footnote{R. F. Vessot et al., “Test of relativistic gravitation with a space-borne hydrogen maser,” \textit{Physical Review Letters}, vol. 45, no. 26, pp. 2081–2084, Dec. 1980. doi:10.1103/physrevlett.45.2081 } was an experiment conducted to test the relativistic frequency shift as predicted by the Equivalence Principle. The experimental design is quite ingenious in the fact that it was able to eliminate a major source of error. There are two sources of relativistic frequency shift: the doppler shift, a consequence of the relative motion of the spacecraft and the ground system, and the gravitational redshift. The former can be expressed as a Taylor series, whose first and second order terms are of principle importance. The first order term is on the order $\frac{V}{c}$, where V is the relative velocity. In the experiment this would result in a shift on the order $10^{-5}$. The second order doppler shift would thus be on the order $10^{-10}$. On the other hand the gravitational redshift would be on the order $10^{-10}$ as well. It is clear that the first order doppler shift would dominate. Any experiment would need to isolate or remove the first order doppler effect in order to probe the gravitational phenomena.
@@ -114,6 +117,8 @@ Vessot and Levin (1980)\footnote{R. F. Vessot et al., “Test of relativistic gr
 \end{figure}
 
 Figure 1 is a sketch of the Doppler cancellation and tracking system as used by Vessot et al. Two masers are used, with two-way maser-transponder-mixer system used to isolate the first order Doppler shift. The authors of the paper note that the first order Doppler effects "were removed by subtracting in mixer M3 one-half the two-way Doppler shift obtained from mixer M2 by comparing the separate two-way transponder links." The result is a measurement of the frequency shift whose effects include only that of second order Doppler effect and the gravitational redshift. The former can be isolated due to the fact that the velocities of the ground system and the probe (spacecraft) system are known.
+
+\subsection{Parameterized post-Newtonian Frameworks}
 
 Parameterized post-Newtonian (PPN) formalism is a framework in which different metric theories of gravity can be compared with each other, and be experimentally tested. Metric theories of gravity are those theories that posit that gravitation arises from curvature of spacetime. These theories include General Relativity, the most well known and tested, as well as others. Metric theories of gravity, for the most part, provide a spherically symmetric with the form
 
@@ -133,7 +138,7 @@ The functions $A(r)$ and $B(r)$ are specified by the first post-Newtonian correc
 
 Differing metric theories of gravity will propose different values for the PPN parameters $\beta$ and $\gamma$. General Relativity, for example, has values $\beta = 1$ and $\gamma = 1$. The utility of the PPN framework is material observations, such as the deflection of light by the Sun, or the precession of the perihelion of a planets orbit, or the Shapiro time delay, can be expressed in terms of the PPN parameters. Thus experiments can be used to determine the values of the PPN parameters; and compare them with the proposed values from a given metric theory of gravity.
 
-\section*{Solution}
+\section{Solution}
 
 We first need to derive the gravitational red shift in terms of the PPN metric. The line element of the PPN metric has the form
 
