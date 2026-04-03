@@ -11,7 +11,101 @@
 \maketitle
 
 \section*{Problem}
-Question: Is the experiment of Vessot & Levine sensitive enough to say anything about the parameters $\beta$ and $\gamma$? Is the third-order doppler effect important in analyzing the experiment?\footnote{Question 10.2 Hartle}
+
+\textit{Question: Is the experiment of Vessot & Levine sensitive enough to say anything about the parameters $\beta$ and $\gamma$? Is the third-order doppler effect important in analyzing the experiment?}\footnote{Question 10.2 Hartle}\\
+
+
+This problem is an exercise in applying the Parameterized post-Newtonian framework to particular prediction. Specifically, by solving this problem, we can deduce whether the experimental results obtained by an experiment such as Vessot and Levine (1980) allows one to determine PPN parameters. Before presenting a solution to the problem, I will briefly sketch both the frequency shift predicted by the equivalence principle; the Vessot and Levine experiment; and the PPN framework.\\
+
+The gravitational frequency shift is a consequence of the Equivalence Principle. If it is accepted that uniformly frame is entirely equivalent to a uniform (or local) gravitational field, then it must be the case that the rates of emission and reception for spatially separated observers are different. That is to say that frequencies are shifted, preportional to the gravitational field strength. All theories of gravity that are reconciled with the Equivalence Principle—which is to say, all modern theories of gravity—will predict a gravitational frequency shift. The equivalence principle explicitly predicts that for a detector $B$ and an emitter $A$ the rates of emission and reception (i.e. frequencies $\omega_B$ and $\omega_A$) are related by the difference in the gravitational field strengths\footnote{See Hartle, 113-119}
+
+\begin{equation}
+    \omega_B = \left(1 + \frac{\Phi_A - \Phi_B}{c^2}\right) \omega_A.
+\end{equation}
+
+As we will see shortly, the Vessot and Levin experiment involves the frequency shift involving signals on the surface of the Earth and in orbit. So we can apply (1) to a situation where a signal is emitted from the surface of the Earth and measured by an observer far away. In this case the gravitational potential on the surface is
+
+\begin{equation}
+    \Phi= -\frac{GM_{\oplus}}{R_{\oplus}}
+\end{equation}
+
+where $M_{\oplus}$ and $R_{\oplus}$ is the mass and radius of the Earth respectively. The potential as $r \rightarrow \infty$ is zero. Thus we have
+
+\begin{equation}
+    \omega_{\infty} = \left(1 - \frac{GM_{\oplus}}{R_{\oplus}c^2}\right) \omega_{\oplus}.
+\end{equation}
+
+This problem can treated in General Relativity by approximating the gravitation field using the Schwarzchild geometry, produced by a spherically symmetric body. The Schwarzchild Metric, for the spacetime approximation, is given in geometrical units
+
+\begin{equation}
+    ds^2 = -\left(1 - \frac{2M}{r}\right)dt^2 + \left(1 - \frac{2M}{r}\right)^{-1} dr^2 + r^2(d\theta^2 + \sin^2\theta d\phi^2).
+\end{equation}
+
+The gravitational redshift, (3), can be recovered in a clever way. First we note that the Killing vector has temporal and spherical symmetry; the metric (4) is independent of the coordinates $t$ and $\phi$. For our purposes we will exploit the temporal symmetry and define a Killing vector
+
+\begin{equation}
+    \xi^\alpha = (1, 0, 0, 0).
+\end{equation}
+
+We then define the conserved scalar product of the four-velocity and this Killing vector along a geodesic
+
+\begin{equation}
+    \boldsymbol{\xi} \cdot \boldsymbol{u} = \text{const}.
+\end{equation}
+
+Next we set up on problem as following: an observer travels along a world line with four-velocity $\boldsymbol{u}_{obs}$ measures the frequency of light by measuring its energy. The energy an observer measures is related to the four-momentum of the light and their own four-velocity by
+
+\begin{equation}
+    E = - \boldsymbol{p} \cdot \boldsymbol{u}_{obs}.
+\end{equation}
+
+Furthermore we note that we can relate the energy of a photon to its frequency using the Planck relation. This results in
+
+\begin{equation}
+    \hbar \omega = - \boldsymbol{p} \cdot \boldsymbol{u}_{obs}.
+\end{equation}
+
+We note that the spatial components of the observers four-velocity are all zero. Using the normalization condition of four-velocity, we have
+
+\begin{equation}
+    g_{tt} [u_{obs}^t]^2 = -1.
+\end{equation}
+
+Using the temporal metric element from (4) we can specify the four-velocity component
+
+\begin{equation}
+    u_{obs}^t = \left(1 - \frac{2M}{r}\right)^{-\frac{1}{2}}.
+\end{equation}
+
+Using the Killing vector () we can thus write the observers four-velocity as
+
+\begin{equation}
+    \boldsymbol{u}_{obs} = \left(1 - \frac{2M}{r}\right)^{-\frac{1}{2}} \boldsymbol{\xi}.
+\end{equation}
+
+The frequency of light as measured by an observer on the surface of the Earth is
+
+\begin{equation}
+    \hbar \omega_{R_{\oplus}} = \left(1 - \frac{2M}{r}\right)^{-\frac{1}{2}} \left(\boldsymbol{p} \cdot \boldsymbol{\xi}\right)|_{r=R_{\oplus}}.
+\end{equation}
+
+Similarly, the frequency of light as measured by an observer far away as $r \rightarrow \infty$ is
+
+\begin{equation}
+    \hbar \omega_{\infty} = \left(1 - \frac{2M}{r}\right)^{-\frac{1}{2}} |_{r \rightarrow \infty} \left(\boldsymbol{p} \cdot \boldsymbol{\xi}\right)|_{r \rightarrow \infty}.
+\end{equation}
+
+The Schwarzchild coefficient reduces to one in the limit where $r \rightarrow \infty$. We finally note the conserved scalar product as defined by (). This permits () to be substituted for () and we find
+
+\begin{equation}
+   \frac{\omega_{\infty}}{\omega_{R_{\oplus}}} = \left(1 - \frac{2M}{r}\right)^{\frac{1}{2}}.
+\end{equation}
+
+This result can be expanded in powers of $2M/R$ when that is small. The first order term recovers the redshift as prediced solely by the Equivalence Principle in ().
+
+
+
+Vessot and Levin (1980) was an experiment conducted to test the relativistic frequency shift predicted by the Equivalence Principle
 
 \section*{Solution}
 
