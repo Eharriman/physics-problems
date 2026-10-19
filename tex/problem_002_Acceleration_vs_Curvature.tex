@@ -23,4 +23,32 @@ thereby showing this spacetime is flat. Find a coordinate transformation that pu
 
 \subsection{Introduction}
 
+This is a seemingly inncocuous problem in Hartle's introductory text on General Relativity. It permits a learner to practice calculating the Riemann curvature components from hand; and further induces the reader to consider the meaning of said calculations. But in solving, and further reflecting on this problem, one can achieve significant intuition and understanding into the nature of space, time, and the meaning of realtivity.
+
+The problem itself is straightforward: given metric \eqref{uniform metric}, calculate the Riemann curvature compoents $R^{\alpha} _{\beta \gamma \delta}$. A flat spacetime is one whose Riemann components vanish (in all coordinates), and thus we aim to demonstrate that:
+
+\begin{equation}
+    \label{flat Riemann}
+    R^{\alpha} _{\beta \gamma \delta} = 0
+\end{equation}
+
+Further, we will attempt to produce a coordinate transformation, $x \rightarrow x'$, that reduces the metric \eqref{uniform metric} to a Minkowski flat spacetime form. Explicitly:
+
+\begin{equation}
+    \label{minkowski metric}
+    ds^2 = -dt'^2 + dx'^2 + dy'^2 + dz'^2
+\end{equation}
+
+These two results would demonstrate the following physical facts: th spacetime described by the metric \eqref{uniform metric} is flat, even though on first glance it does not look so; there exists a coordinate transformation under which the spacetime is described by the usual flat Minkowski metric. Prior to solving the above-stated problem, a thought-experiment is worthwhile to encourage the specific line of inquiry this article will tackle.
+
+\subsection{Acceleration or Gravity?}
+
+When I was first introduced to General Relativity, a specific, all-too-familiar, heuristic was used to motivate the intuition behind the so-called Equivalence Principle. 
+
+Consider an observer in an elevator whose construction is sufficient to isolate the observer from any external signals/light/etc. The observer has some basic physical devices with which they can conduct rudimentary physics experiments. External agents have set up, for the internal observer, one of two possible physical scenarios: 1) the elevator is stationary on the surface of a planet which has a static uniform gravitational field whose acceleration is $g=9.8 m/s^2$; Or 2) the elevator is pulled by an accelerating spaceship through empty space at a constant, uniform, acceleration of $9.8 m/s^2$.
+
+Question: are there any experiments the internal observer can perform that would allow them to discriminate between the physical scenario a) and b)? In other words, are there any experiments that the internal observer could perform that would allow them to determine whether they were under a uniform gravitational field, or under uniform accelerated motion?
+
+Those familiar with descriptions of the Equivalence Principle would answer in the negative: all \textit{local} experiments will be indinguishable between scenario a) and b). Objects dropped will accelerate down to the floor with the same rates. In the former scenario this is due to the uniform gravitational acceleration, in the latter case this is due to Newton's First Law: the elevator floor accelerates up to the released object at the same acceleration as the uniform gravitiational field. The Equivalence Principle seems to indicate that these two scenarios are identical. I recall learning that the beauty of General Relativity was Einstein's insight: if these two scenarios are indistinguishable, then their physical origin should be indistinguishable as well. That is: acceleration and gravity are one in the same.
+
 \end{document}
