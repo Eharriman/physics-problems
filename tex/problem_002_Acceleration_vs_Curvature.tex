@@ -62,7 +62,55 @@ Consider the equation for the Christoffel symbols
     \Gamma^{\alpha}_{\beta \gamma} = \frac{1}{2} g^{\alpha \delta} \left( \partial_{\gamma} g_{\delta \beta} + \partial_{\beta} g_{\delta \gamma} - \partial_{\delta} g_{\beta \gamma}\right)
 \end{equation}
 
-where we use the shorthand $\partial_{\gamma} = \frac{\partial}{\partial x^{\gamma}}$. Metric \eqref{uniform metric} is diagonal and thus fixes the condition $\alpha = \delta$. 
+where we use the shorthand $\partial_{\gamma} = \frac{\partial}{\partial x^{\gamma}}$. Metric \eqref{uniform metric} is diagonal and thus fixes the condition $\alpha = \delta$. The only valid choices are $\alpha = t, x$, as the other components result in vanishing first derivatives. Consider the case $\alpha = t$
+
+
+\begin{equation}
+    \label{christ-awful-t}
+    \Gamma^{t}_{\beta \gamma} = \frac{1}{2} g^{t t} \left( \partial_{\gamma} g_{t t} + \partial_{t} g_{t t} - \partial_{t} g_{\beta \gamma}\right)
+\end{equation}
+
+For the uniform metric the time derivatives vanish. The only non-vanishing component is found with $\gamma = x$
+
+\begin{equation}
+    \label{christ-awful-t-2}
+    \Gamma^{t}_{t x} = \frac{1}{2} g^{t t} \left( \partial_{x} g_{t t}\right)
+\end{equation}
+
+$g^{t t}$ can be found using the identity
+
+\begin{equation}
+    \label{metric-kronecker}
+    g^{\alpha \beta} g_{\alpha \beta} = \delta^{\alpha} _{\beta}
+\end{equation}
+
+And the derivative in \eqref{christ-awful-t-2} is
+
+\begin{equation}
+    \label{x-derivative-explicit}
+    \partial_{x} g_{t t} = 2 (1 + gx) g
+\end{equation}
+
+Thus
+
+\begin{equation}
+    \label{christ-awful-t-3}
+    \Gamma^{t}_{t x} = g (1 + gx)^{-1}
+\end{equation}
+
+Using the symmetry of the Christoffel symbols we also have $\Gamma^{t}_{t x} = \Gamma^{t}_{x t}$. The other case is determined with $\alpha = x$. This results in
+
+\begin{equation}
+    \label{christ-awful-x}
+    \Gamma^{t}_{t t} = \frac{1}{2} g^{x x} \left( \partial_{t} g_{\delta t} + \partial_{t} g_{\delta t} - \partial_{\delta} g_{t t}\right)
+\end{equation}
+
+Using the same arguments as above, this results in
+
+\begin{equation}
+    \label{christ-awful-x-1}
+    \Gamma^{t}_{t t} = \frac{1}{2} g^{x x} \left( - \partial_{x} g_{t t}\right) = g(1 + gx)
+\end{equation}
 
 
 \end{document}
