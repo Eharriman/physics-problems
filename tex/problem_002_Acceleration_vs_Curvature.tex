@@ -141,4 +141,95 @@ The only non-vanishing Christoffel symbol forces $\epsilon = t$. The double Chri
 \end{equation}
 
 An identical argument with $\alpha = x$ shows that all Riemann components vanish. Recall that the Riemann curvature tensor is used to quantify local curvature. If all components vanish then the space is flat. We thus conclude that the spacetime described by \eqref{uniform metric} is flat.
+
+\subsection{The General Uniform Metric}
+
+It is worth proving that \eqref{uniform metric} is an example of a more general case. Consider a metric of the form
+
+\begin{equation}
+    \label{gen-uni-metric}
+    ds^2  = -f^2(x) dt^2 + dx^2 + dy^2 + dz^2
+\end{equation}
+
+where $f(x)$ is a function of the coordinate x alone. The Christoffel symbols for this metric reduce to two cases. Firstly
+
+\begin{equation}
+    \label{christ-awful-t-f}
+    \Gamma^{t}_{\beta \gamma} = \frac{1}{2} g^{t t} \left( \partial_{\gamma} g_{t t} + \partial_{t} g_{t t} - \partial_{t} g_{\beta \gamma}\right)
+\end{equation}
+
+This simplifies with the only non-zero derivative setting $\gamma = x$
+
+\begin{equation}
+    \label{christ-awful-t-f2}
+    \begin{split}
+    \Gamma^{t}_{t x} & = \frac{1}{2} g^{t t} \left( \partial_{x} g_{t t}\right) \\
+    & = \frac{1}{2} (-f^{-2}(x)) \partial_{x} (f^2(x)) \\
+    & = f^{-2}(x) f(x) f'(x) \\
+    & = \frac{f'(x)}{f(x)} = \Gamma^{t}_{x t}
+    \end{split}
+\end{equation}
+
+The second case has $\alpha = x$
+
+\begin{equation}
+    \label{christ-awful-x-f}
+    \Gamma^{x}_{\beta \gamma} = \frac{1}{2} g^{x x} \left( \partial_{\gamma} g_{x x} + \partial_{\beta} g_{x x} - \partial_{\delta} g_{\beta \gamma}\right)
+\end{equation}
+
+This simplifies in the only non-zero case setting $\delta = x$
+
+\begin{equation}
+    \label{christ-awful-x-f2}
+    \begin{split}
+    \Gamma^{x}_{t t} & = \frac{1}{2} g^{xx} \left( - \partial_{x} g_{t t}\right) \\
+    & = \frac{1}{2} (-\partial_{x} (-f^2(x))) \\
+    & = f(x) f'(x)
+    \end{split}
+\end{equation}
+
+There are four non-vanishing Riemann components; only two cases need be calculated due to the (anti)-symmetry of the Riemann curvature. The first case is
+
+\begin{equation}
+    \label{Riemmann-curv-formula-f-txtx}
+    \begin{split}
+    R^{t} _{x t x} & = \partial_{t} \Gamma^{t}_{x x} - \partial_{x} \Gamma^{t}_{x t} + \Gamma^{t}_{t \epsilon} \Gamma^{\epsilon}_{x x} - \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{x t} \\
+    & = -\partial_{x} \Gamma^{t}_{x t} - \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{x t} \\
+    & = -\partial_{x} \left( \frac{f'(x)}{f(x)} \right) - \left( \frac{f'(x)}{f(x)} \right)^2 \\ 
+    & = -\frac{f''(x)}{f(x)} + \left( \frac{f'(x)}{f(x)} \right)^2 - \left( \frac{f'(x)}{f(x)} \right)^2 \\
+    & = -\frac{f''(x)}{f(x)} = - R^{t} _{x x t}
+    \end{split}
+\end{equation}
+
+The second case is
+
+\begin{equation}
+    \label{Riemmann-curv-formula-f-xttx}
+    \begin{split}
+    R^{x} _{t t x} & = \partial_{t} \Gamma^{x}_{t x} - \partial_{x} \Gamma^{x}_{t t} + \Gamma^{x}_{t \epsilon} \Gamma^{\epsilon}_{t x} - \Gamma^{x}_{x \epsilon} \Gamma^{\epsilon}_{t t} \\
+    & = -\partial_{x} \Gamma^{x}_{t t} + \Gamma^{x}_{t t} \Gamma^{t}_{t x} \\
+    & = -\partial_{x} (f(x) f'(x)) + (f(x) f'(x)) \left( \frac{f'(x)}{f(x)} \right) \\ 
+    & = -(f'(x))^2 - f(x) f''(x) + (f(x))^2 \\
+    & = f(x) f''(x) = - R^{x} _{t t x}
+    \end{split}
+\end{equation}
+
+The condition of flat spacetime is one which requires vanishing Riemann curvature. In \eqref{Riemmann-curv-formula-f-txtx} and \eqref{Riemmann-curv-formula-f-xttx} this condition requires the second derivatives of the metric function to vanish. In the specific case of \eqref{uniform metric} we have $f(x) = 1 + gx$ and $f''(x) = 0$. Thus flat spacetime for a metric of the form \eqref{gen-uni-metric} requires
+
+\begin{equation}
+    \label{2nd-f(x)-vanish}
+    f''(x) = 0
+\end{equation}
+
+The differential equation \eqref{2nd-f(x)-vanish} can be solved by integrating twice and yielding the form of $f(x)$
+
+\begin{equation}
+    \label{f(x)-definition}
+    f(x) = Ax + B
+\end{equation}
+
+for constants $A$ and $B$.
+
+We can summarize the results of this general derivation.
+
 \end{document}
