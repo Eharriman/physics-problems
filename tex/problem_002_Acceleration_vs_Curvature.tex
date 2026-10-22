@@ -102,15 +102,43 @@ Using the symmetry of the Christoffel symbols we also have $\Gamma^{t}_{t x} = \
 
 \begin{equation}
     \label{christ-awful-x}
-    \Gamma^{t}_{t t} = \frac{1}{2} g^{x x} \left( \partial_{t} g_{\delta t} + \partial_{t} g_{\delta t} - \partial_{\delta} g_{t t}\right)
+    \Gamma^{x}_{t t} = \frac{1}{2} g^{x x} \left( \partial_{t} g_{\delta t} + \partial_{t} g_{\delta t} - \partial_{\delta} g_{t t}\right)
 \end{equation}
 
 Using the same arguments as above, this results in
 
 \begin{equation}
     \label{christ-awful-x-1}
-    \Gamma^{t}_{t t} = \frac{1}{2} g^{x x} \left( - \partial_{x} g_{t t}\right) = g(1 + gx)
+    \Gamma^{x}_{t t} = \frac{1}{2} g^{x x} \left( - \partial_{x} g_{t t}\right) = g(1 + gx)
 \end{equation}
 
+In coordinate components the Riemann curvature is
 
+\begin{equation}
+    \label{Riemmann-curv-formula}
+    R^{\alpha} _{\beta \gamma \delta} = \partial_{\gamma} \Gamma^{\alpha}_{\beta \delta} - \partial_{\delta} \Gamma^{\alpha}_{\beta \gamma} + \Gamma^{\alpha}_{\gamma \epsilon} \Gamma^{\epsilon}_{\beta \delta} - \Gamma^{\alpha}_{\delta \epsilon} \Gamma^{\epsilon}_{\beta \gamma}
+\end{equation}
+
+Fix the only case with non-zero Christoffel symbols using $\alpha = t$
+
+\begin{equation}
+    \label{Riemmann-curv-formula-t-x}
+    R^{t} _{\beta \gamma \delta} = \partial_{\gamma} \Gamma^{t}_{\beta \delta} - \partial_{\delta} \Gamma^{t}_{\beta \gamma} + \Gamma^{t}_{\gamma \epsilon} \Gamma^{\epsilon}_{\beta \delta} - \Gamma^{t}_{\delta \epsilon} \Gamma^{\epsilon}_{\beta \gamma}
+\end{equation}
+
+With only three non-vanishing Christoffel symbols (two of which are identical by symmetry) we have only two cases. Consider $\beta = t$ and $\delta = x$. The only non-zero derivative forces $\gamma = x$. Thus:
+
+\begin{equation}
+    \label{Riemmann-curv-formula-t-x}
+    R^{t} _{t x x} = \partial_{x} \Gamma^{t}_{t x} - \partial_{x} \Gamma^{t}_{t x} + \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{t x} - \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{t x}
+\end{equation}
+
+The only non-vanishing Christoffel symbol forces $\epsilon = t$. The double Christoffel terms thus vanish by symmetry. So too does the first derivatives. Thus
+
+\begin{equation}
+    \label{Riemmann-curv-formula-t-x-2}
+    R^{t} _{t x x} = 0
+\end{equation}
+
+An identical argument with $\alpha = x$ shows that all Riemann components vanish. Recall that the Riemann curvature tensor is used to quantify local curvature. If all components vanish then the space is flat. We thus conclude that the spacetime described by \eqref{uniform metric} is flat.
 \end{document}
