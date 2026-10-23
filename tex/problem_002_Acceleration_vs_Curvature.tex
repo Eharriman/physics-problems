@@ -232,4 +232,52 @@ for constants $A$ and $B$.
 
 We can summarize the results of this general derivation. A metric of the form \eqref{gen-uni-metric} describes a flat spacetime if it meets the condition \eqref{2nd-f(x)-vanish}. If this condition is satisfied, the Riemann curvature components vanish and thus the local curvature vanishes: the spacetime is flat. In the case of flat spacetime, the unknown metric function $f(x)$ takes the form \eqref{f(x)-definition}. It is worth noting that flat spacetime does not follow simply from a time-independent potential in the metric.\footnote{Which is clear in the case of the Schwarzchild metric.}
 
+\section{Rindler Coordinates and Uniform Acceleration}
+
+\subsection{Coordinate Transformation}
+
+The previous section demonstrated that the original metric \eqref{uniform metric} described a flat spacetime, as shown by the vanishing Riemann curvature. This seems to imply that the metric \eqref{uniform metric} can be written in coordinates whereby the transformed metric takes the form
+
+\begin{equation}
+    \label{flat-space-metric}
+    ds^2 = -dt'^2 + dx'^2 + dy'^2 + dz'^2
+\end{equation}
+
+The coordinates that satisfy this condition are those of an observer undergoing constant proper acceleration. The hyperbolic motion of this observer is connected to an inertial frame of reference by the following transformations:
+
+\begin{equation}
+    \label{hyperbolic-t-coord}
+    T = (\frac{1}{g} + x) \sinh(gt)
+\end{equation}
+
+\begin{equation}
+    \label{hyperbolic-x-coord}
+    X = (\frac{1}{g} + x) \cosh(gt)
+\end{equation}
+
+The metric for these coordinates are found with
+
+\begin{equation}
+    \label{hyperbolic-t-diff}
+    dT = \sinh(gt) dx + g(\frac{1}{g} + x) \cosh(gt) dt
+\end{equation}
+
+\begin{equation}
+    \label{hyperbolic-x-diff}
+    dX = \cosh(gt) dx + g(\frac{1}{g} + x) \sinh(gt) dt
+\end{equation}
+
+Consider the quadratic terms
+
+\begin{equation}
+    \label{hyperbolic-t-squared}
+    dT^2 = \sinh^2(gt) dx^2 + g\left(\frac{1}{g} + x\right) \cosh(gt) \sinh(gt) dx dt + g^2\left(\frac{1}{g} + x\right)^2 \cosh^2(gt) dt^2
+\end{equation}
+
+\begin{equation}
+    \label{hyperbolic-x-squared}
+    dX^2 = \cosh^2(gt) dx^2 + g\left(\frac{1}{g} + x\right) \cosh(gt) \sinh(gt) dx dt + g^2\left(\frac{1}{g} + x\right)^2 \sinh^2(gt) dt^2
+\end{equation}
+
+
 \end{document}
