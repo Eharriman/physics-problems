@@ -295,4 +295,61 @@ This reduces to
 
 The hyperbolic coordinate transformations for the orthogonal components are trivial ($Y = y$, $Z = z$). Thus \eqref{flat-metric-coord-2} recovers the metric \eqref{uniform metric}.
 
+\subsection{Hyperbolic Motion}
+
+The Rindler Coordinates\footnote{Transformations \eqref{hyperbolic-t-coord} and \eqref{hyperbolic-x-coord} are in fact known as Kottler–Møller coordinates.} describe the hyperbolic motion of a uniformly accelerated observer in flat Minkowski spacetime. But it is important to clarify that these coordinates describe uniform \textit{proper} acceleration; that is, a motion where the acceleromator carried by the accelerating observer reads a constant rate. It should be obvious that, unlike the Newtonian formulation, uniform \textit{coordinate} acceleration is nonphysical. It would result, eventually, in superluminal speeds. We can derive the hyperbolic equations of motion in flat spacetime in order to make this distinction explicit. Consider the a timelike worldline of a particle parameterized by proper time, $\tau$,
+
+\begin{equation}
+    \label{world-line}
+    x^{\mu}(\tau) = (cT(\tau), X(\tau))
+\end{equation}
+
+The four velocity is defined by the derivative with respect to proper time
+
+\begin{equation}
+    \label{four-velocity}
+    U^{\mu} = \frac{dx^{\mu}}{d \tau} = \gamma(c, v)
+\end{equation}
+
+with the Lorentz factor defined as
+
+\begin{equation}
+    \label{lorentz-factor}
+    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{equation}
+
+and the coordinate velocity defined as expected
+
+\begin{equation}
+    \label{coordinate-velocity}
+    v = \frac{dX}{dT}
+\end{equation}
+
+Similarly the four-acceleration is defined as the derivative
+
+\begin{equation}
+    \label{four-acceleration}
+    A^{\mu} = \frac{dU^{\mu}}{d \tau}
+\end{equation}
+
+Note that for timelike worldlines, the invariant four-velocity quantity demands
+
+\begin{equation}
+    \label{four-vel-invariant}
+    U^{\mu}U_{\mu} = \eta_{\mu \nu} U^{\nu} U^{\mu} = -c^2
+\end{equation}
+
+It is important to show a geometric relation between the four-velocity and four-acceleration for this motion. Consider the derivative of \eqref{four-vel-invariant}:
+
+\begin{equation}
+    \label{four-vel-derivative}
+    \frac{d \left( \eta_{\mu \nu} U^{\nu} U^{\mu}\right)} {d \tau} = \eta_{\mu \nu} \frac{dU^{\nu}}{d \tau} U^{\mu} + \eta_{\mu \nu} \frac{dU^{\mu}}{d \tau} U^{\nu} = \eta_{\mu \nu} A^{\nu} U^{\mu} + \eta_{\mu \nu} A^{\mu} U^{\nu} = 0
+\end{equation}
+
+This condition forces orthogonality between the four-velocity and four-acceleration
+
+\begin{equation}
+    \label{four-vel-acc-orthogonal}
+    U_{\mu} A^{\mu} = 0
+\end{equation}
 \end{document}
