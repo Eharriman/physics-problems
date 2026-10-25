@@ -350,6 +350,52 @@ This condition forces orthogonality between the four-velocity and four-accelerat
 
 \begin{equation}
     \label{four-vel-acc-orthogonal}
-    U_{\mu} A^{\mu} = 0
+    U^{\mu} A_{\mu} = 0
 \end{equation}
+
+Consider the invariant quantity for proper acceleration:
+
+\begin{equation}
+    \label{proper-acc-invariant}
+    \alpha = \sqrt{A^{\mu} A_{\mu}}
+\end{equation}
+
+From the explicit defintion of the four velocity in \eqref{four-velocity} we have
+
+\begin{equation}
+    \label{four-acc-deriv-def}
+    A^{\mu} = (\gamma^4 \frac{va}{c}, \gamma^4 a)
+\end{equation}
+
+with the coordinate acceleration defined as $a = \frac{dv}{dT}$. The invariant quantity is then
+
+\begin{equation}
+    \label{proper-acc-invariant-explicit}
+    A^{\mu} A_{\mu} = \gamma^6 a^2
+\end{equation}
+
+Thus the invariant proper acceleration is:
+
+\begin{equation}
+    \label{alpha-proper-acc-invariant}
+    \alpha = \gamma^3 a
+\end{equation}
+
+One can recover the Newtonian relation in the case of non-relativistic velocitities: specifically, the equality of coordinate and proper acceleration. In this case $v <<< c$, thus $\gamma \approx 1$ and this implies $\alpha \approx a$. A constant proper acceleration, $\alpha$, demands that the coordinate acceleration vary inversely with respect to coordinate time. Explicitly
+
+\begin{equation}
+    \label{coord-acc}
+    a = \frac{\alpha}{\gamma^3} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}
+\end{equation}
+
+This relation demonstrates the distinction between uniform proper acceleration in the relativistic sense, and the classical form under Newtonian motion. In the relativistic sense, while the uniformly accelerated observer continually measures a constant acceleration, $\alpha$, in their frame, a stationary observer at the origin of the coordinate frame measures an ever decreasing acceleration which goes as $1/\gamma^3$.
+
+The equations of motion can be determined, in the coordinate frame, by solving \eqref{coord-acc}:
+
+\begin{equation}
+    \label{diff-eq-coord-acc}
+    \frac{dv}{dT} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}
+\end{equation}
+
+
 \end{document}
