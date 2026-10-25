@@ -432,5 +432,40 @@ Consider the limit as $T$ tends to infinity:
     \lim_{T\to\infty} v(T) = c
 \end{equation}
 
-Which is consistent with special relativity. An object undergoing uniform proper acceleration has a coordinate acceleration which tends toward zero as $T \rightarrow \infty$; and a velocity which tops out at a top speed of $c$.
+Which is consistent with special relativity. An object undergoing uniform proper acceleration has a coordinate acceleration which tends toward zero as $T \rightarrow \infty$; and a velocity which tops out at a top speed of $c$. The equations of motion for $X(T)$ can be found by then seperating \eqref{v-fnc-of-T} with $v(T) = dX/dT$:
+
+\begin{equation}
+    \label{separable-X-of-T}
+    dX = \frac{\alpha T}{\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}} dT
+\end{equation}
+
+Integrating both sides:
+
+\begin{equation}
+    \label{separable-X-of-T-integral}
+    X(T) - X(0) = \int_0^T \frac{\alpha T'}{\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}} dT'
+\end{equation}
+
+The integral can be solved with u-substitution: let $u = 1 + \frac{\alpha^2}{c^2}T^2$. The integral can then be solved to yield:
+
+\begin{equation}
+    \label{sol-X-of-T}
+    X(T) - X(0) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}} - 1 \right)
+\end{equation}
+
+Let $X(0) = \frac{c^2}{\alpha^2}$. Then isolating for $X(T)$ leaves
+
+\begin{equation}
+    \label{X-of-T}
+    X(T) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}\right)
+\end{equation}
+
+Square both sides of \eqref{X-of-T}, then rearrange as
+
+\begin{equation}
+    X^2 - c^2T^2 = \frac{c^4}{\alpha^2}
+\end{equation}
+
+This is the equation of a hyperbola in Minkowski spacetime. An observer undergoing uniform proper acceleration is said to be under hyperbolic motion.
+
 \end{document}
