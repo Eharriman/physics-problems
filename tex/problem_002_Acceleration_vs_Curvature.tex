@@ -397,5 +397,40 @@ The equations of motion can be determined, in the coordinate frame, by solving \
     \frac{dv}{dT} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}
 \end{equation}
 
+The seperable equations can be directly integrated
 
+\begin{equation}
+    \label{separable-eq-vel-T}
+    \int_0^v \frac{dv'}{\left(1-\frac{v'^2}{c^2}\right)^{3/2}} = \int_0^T\alpha\,dT'.
+\end{equation}
+
+This results in 
+
+\begin{equation}
+    \label{separable-eq-vel-T-resukt}
+    \gamma v = \alpha T
+\end{equation}
+
+Isolating the coordinate velocity and solving as a function of coordinate time, $T$, yields
+
+\begin{equation}
+    \label{v-fnc-of-T}
+    v(T) = \frac{\alpha T}{\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}}
+\end{equation}
+
+Consider some of the properties of \eqref{v-fnc-of-T}. The velocity as measured in the coordinate frame at $T = 0$ gives
+
+\begin{equation}
+    \label{v-of-0}
+    v(0) = 0
+\end{equation}
+
+Consider the limit as $T$ tends to infinity:
+
+\begin{equation}
+    \label{v-limit}
+    \lim_{T\to\infty} v(T) = c
+\end{equation}
+
+Which is consistent with special relativity. An object undergoing uniform proper acceleration has a coordinate acceleration which tends toward zero as $T \rightarrow \infty$; and a velocity which tops out at a top speed of $c$.
 \end{document}
