@@ -450,14 +450,14 @@ The integral can be solved with u-substitution: let $u = 1 + \frac{\alpha^2}{c^2
 
 \begin{equation}
     \label{sol-X-of-T}
-    X(T) - X(0) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}} - 1 \right)
+    X(T) - X(0) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}} - 1 \right)
 \end{equation}
 
 Let $X(0) = \frac{c^2}{\alpha^2}$. Then isolating for $X(T)$ leaves
 
 \begin{equation}
     \label{X-of-T}
-    X(T) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}\right)
+    X(T) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}\right)
 \end{equation}
 
 Square both sides of \eqref{X-of-T}, then rearrange as
@@ -467,5 +467,12 @@ Square both sides of \eqref{X-of-T}, then rearrange as
 \end{equation}
 
 This is the equation of a hyperbola in Minkowski spacetime. An observer undergoing uniform proper acceleration is said to be under hyperbolic motion.
+
+We can validate the consistency of \eqref{sol-X-of-T} in the non-relativistic limit $v <<< c$. The square root can be approximated as
+
+\begin{equation}
+    \label{newton-limit-hyperbolic-sqrt}
+    \sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}
+\end{equation}
 
 \end{document}
