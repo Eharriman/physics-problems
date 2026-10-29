@@ -450,19 +450,20 @@ The integral can be solved with u-substitution: let $u = 1 + \frac{\alpha^2}{c^2
 
 \begin{equation}
     \label{sol-X-of-T}
-    X(T) - X(0) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}} - 1 \right)
+    X(T) - X(0) = \frac{c^2}{\alpha}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}} - 1 \right)
 \end{equation}
 
-Let $X(0) = \frac{c^2}{\alpha^2}$. Then isolating for $X(T)$ leaves
+Let $X(0) = \frac{c^2}{\alpha}$. Then isolating for $X(T)$ leaves
 
 \begin{equation}
     \label{X-of-T}
-    X(T) = \frac{c^2}{\alpha^2}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}\right)
+    X(T) = \frac{c^2}{\alpha}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}\right)
 \end{equation}
 
 Square both sides of \eqref{X-of-T}, then rearrange as
 
 \begin{equation}
+    \label{hyperbola-of-motion}
     X^2 - c^2T^2 = \frac{c^4}{\alpha^2}
 \end{equation}
 
@@ -472,7 +473,58 @@ We can validate the consistency of \eqref{sol-X-of-T} in the non-relativistic li
 
 \begin{equation}
     \label{newton-limit-hyperbolic-sqrt}
-    \sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}
+    \sqrt{1 + \frac{\alpha^2 T^2}{c^2}} \approx 1 + \frac{\alpha^2 T^2}{2c^2}
+\end{equation}
+
+Then
+
+\begin{equation}
+    \label{newton-limit-1}
+    X(T) - X(0) \approx \frac{c^2}{\alpha} \frac{\alpha^2 T^2}{2c^2}
+\end{equation}
+
+This reduces to the classical nonrelativistc kinematic result
+
+\begin{equation}
+    \label{newton-limit-1}
+    X(T) - X(0) \approx \frac{1}{2}\alpha T^2
+\end{equation}
+
+\subsubsection{Proper Time Parameterization}
+
+It is useful to parameterize the hyperbolic motion of a uniform properly accelerated observer using the proper time of the accelerated frame. The Lorentz factor is given by using \eqref{separable-eq-vel-T-resukt} and \eqref{v-fnc-of-T}
+
+\begin{equation}
+    \label{gamma-of-T}
+    \gamma (T) = \sqrt{1 + \frac{\alpha^2 T^2}{c^2}}
+\end{equation}
+
+Using $d\tau dT/\gamma$,
+
+\begin{equation}
+    \label{propertime-integral}
+    \tau = \int_0^T \frac{dT'}{\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}} = \frac{c}{\alpha} \sinh^{-1} \left( \frac{\alpha T}{c}\right)
+\end{equation}
+
+The coordinate time can then be parameterized by proper time $\tau$
+
+\begin{equation}
+    \label{T-of-tau}
+    c T(\tau) = \frac{c^2}{\alpha} \sinh\left( \frac{\alpha \tau}{c}\right)
+\end{equation}
+
+\eqref{hyperbola-of-motion} can be applied to determine $X(\tau)$
+
+\begin{equation}
+    \label{hyperbolic-X-of-tau}
+    X^2 - \frac{c^4}{\alpha^2} \sinh^2\left( \frac{\alpha \tau}{c}\right) = \frac{c^4}{\alpha^2}
+\end{equation}
+
+Isolating for X yields:
+
+\begin{equation}
+    \label{hyperbolic-X-of-tau-2}
+    X(\tau) = \frac{c^2}{\alpha}\sqrt{1 + \sinh^2\left( \frac{\alpha \tau}{c}\right) } = \frac{c^2}{\alpha} \cosh\left( \frac{\alpha \tau}{c}\right)
 \end{equation}
 
 \end{document}
