@@ -557,6 +557,7 @@ In order to construct a reference frame we require fixed coordinates; a set of o
 Consider the coordinates used by the accelerating observers. Let the observer at $x=0$ be undergoing proper acceleration equal to $g$. Other observers have a fixed spatial coordinate $x$ in the instantaneous rest frame of the accelerating frame. Define a function $\rho (x)$
 
 \begin{equation}
+    \label{rho-def}
     \rho (x) = \frac{c^2}{g} + x
 \end{equation}
 
@@ -573,7 +574,38 @@ Then the coordinate transformations between the observer at rest and the uniform
 In this case the coordinate time $t$ is the proper time $\tau$. These coordinates are formerly known as the Kottler-Møller coordinates. The metric can be derived by differentiating the transformations implicitly
 
 \begin{equation}
+    \label{dT}
     cdT = \sinh \left( \frac{g t}{c}\right) + \rho \cosh \left( \frac{g t}{c}\right) \frac{g}{c}dt
 \end{equation}
 
+\begin{equation}
+    \label{dX}
+    dX = \cosh \left( \frac{g t}{c}\right)dx + \rho \sinh \left( \frac{g t}{c}\right) \frac{g}{c} dt
+\end{equation}
+
+The Minkowski flat spacetime metric is
+
+\begin{equation}
+    ds^2 = -c^2 dT^2 + dX^2 + dY^2 + dZ^2
+\end{equation}
+
+Using \eqref{dT} and \eqref{dX}, the metric becomes
+
+\begin{equation}
+    ds^2 = -\frac{g^2 \rho^2}{c^2} dt^2 + dx^2 + dy^2 + dz^2
+\end{equation}
+
+Using \eqref{rho-def} we find the metric becomes
+
+\begin{equation}
+    ds^2 = -c^2 \left( 1 + \frac{gx}{c^2}\right)^2 dt^2 + dx^2 + dy^2 + dz^2
+\end{equation}
+
+Using $c = 1$ units, the metric is simplified as
+
+\begin{equation}
+    ds^2 = -\left( 1 + gx\right)^2 dt^2 + dx^2 + dy^2 + dz^2
+\end{equation}
+
+The same metric as proposed by Hartle in \eqref{uniform metric}. Thus, the metric proposed is clearly equivalent to the Minkowski metric. The coordinate transformation linking these two forms is that of an observer undergoing uniform proper acceleration $g$ at coordinates $x=0$ within their own frame. 
 \end{document}
