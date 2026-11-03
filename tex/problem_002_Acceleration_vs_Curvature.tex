@@ -609,7 +609,7 @@ Using $c = 1$ units, the metric is simplified as
 
 The same metric as proposed by Hartle in \eqref{uniform metric}. Thus, the metric proposed is clearly equivalent to the Minkowski metric. The coordinate transformation linking these two forms is that of an observer undergoing uniform proper acceleration $g$ at coordinates $x=0$ within their own frame. 
 
-\subsection{Red Shift without Curvature}
+\section{Red Shift without Curvature}
 
 Returning to the Equivalence Principle: an observer undergoing uniform principal acceleration should not be able to, according to the EP, discriminate whether they are undergoing uniform proper acceleration $g$ in flat spacetime, or under the influence of a uniform gravitational field of strength $g$. This is an empirical statement. A verified counter-example would prove, or further constrain, the equivalence principle. Let us propose a simple experiment concerning the red shifting of light.
 
@@ -621,4 +621,67 @@ In a (weak) uniform gravtitational field the rates of reception of signals is re
 \end{equation}
 
 where $\Delta \nu$ is the frequency shift of light and $h$ is the proper length seperation between the emission and reception.
+
+Let us consider the same experiment in the frame of the Rindler observers. Note that the metric \eqref{uniform metric} is independent of coordinate $t$ and thus has a Killing vector
+
+\begin{equation}
+    \xi^{\mu} = (\partial_t)^{\mu}
+\end{equation}
+
+A photon with four-momentum $p^{\mu}$ has a conserved quantity
+
+\begin{equation}
+    E = - p_{\mu} \xi^{\mu} = -p_t
+\end{equation}
+
+A stationary observer, in the Rindler frame, has a four-velocity which satisfies
+
+\begin{equation}
+    g_{\alpha \beta} u^{\alpha} u^{\beta} = -1
+\end{equation}
+
+The only non-vanishing component for a stationary observer is
+
+\begin{equation}
+    u^{\mu} = \frac{\xi^{\mu}}{g_{tt}} = \frac{\xi^{\mu}}{1 + gx}
+\end{equation}
+
+The energy measured by an observer is the scalar product
+
+\begin{equation}
+    E = - p_{\mu} u^{\mu} = - p_{\mu} \frac{\xi^{\mu}}{1 + gx} = \frac{\hbar \nu}{1 + gx}
+\end{equation}
+
+where a photons energy is $E = \hbar \nu$. We can thus consider the frequency shift of light emitted at coordinate $x_A$ and recieved at coordinate $x_B$. The frequency shift is
+
+\begin{equation}
+    \frac{\nu_B}{\nu_A} = \left( \frac{\hbar \nu}{1 + gx_B} \right) \left( \frac{1 + gx_A}{\hbar \nu} \right) = \frac{1 + gx_A}{1 + gx_B}
+\end{equation}
+
+Consider a local experiment, with $x_A = 0$ and $x_B = h$, where $h$ is a small separation. Then
+
+\begin{equation}
+    \frac{\nu_B}{\nu_A} = \frac{1}{1 + gh} \approx 1 - gh
+\end{equation}
+
+Restore SI units with a $1/c^2$ and the red shift relation becomes
+
+\begin{equation}
+    \label{rindler-red-shift}
+    \frac{\Delta \nu}{\nu} = \frac{-gh}{c^2}
+\end{equation}
+
+The red shift relation is recovered. This means that a local test concerning the shift in the emission and reception rates of signals cannot be used to discriminate between an observer in a (weak) uniform gravitational field and a uniformly accelerated frame of reference. Note that as demonstrated in section 2, the Rindler spacetime is flat; an unsuprising fact as there exists a coordinate transform (hyperbolic motion) that transforms the Rindler coordinates to the familiar Minkowski coordinates. The weak static-field gravitational field metric does not admit vanishing curvature. Its Riemann curvature components do not vanish. Therefore the results of this section also indicate another fact: that the measure of redshift cannot be used, locally, to determine the intrinsic geometry of spacetime.
+
+\section{Tidal Forces}
+
+It is clear that the frequency shift of light cannot be used to distinguish between accelerated frames and those with uniform gravitational fields. There is, however, another physical affect that could be used to distinguish between these two physical scenarios: the tidal affects of gravitational fields. Tidal accelerations of matter can be measured locally, and these accelerations under curved spacetime are properites of said curvature. As such, they do not manifest in the flat Minkowski spacetime.
+
+Stated more formally, the equation of geodesic deviation is
+
+\begin{equation}
+    \boldsymbol{(\nabla_{\boldsymbol{u}} \nabla_{\boldsymbol{u}} \chi)}^{\alpha} = -R^{\alpha} _{\beta \gamma \delta} u^{\beta} \chi{\gamma} u^{\delta}
+\end{equation}
+
+this being the second covariant derivative of the geodesic deviation four-vector. It is clear that the second derivatives vanish in the case of a vanishing Riemann curvature, as is the case in the Rindler coordinates. These vanishing derivative of geodesic deviation manifests physically in local measurements of separation for matter arrangements. Consider a configuration of test particles in a circle, all uniformly accelerated in the Rindler frame. What the vanishing equation of geodesic deviation means is that the local separation four vectors between the test particles, the circle configuration, will remain circularly as time progresses. The lack of tidal forces means that there will be no tidal bulges or deformities generated. 
 \end{document}
