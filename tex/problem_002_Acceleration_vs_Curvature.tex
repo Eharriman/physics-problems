@@ -716,7 +716,7 @@ As $R >>> z$, we can expand the denominator as
 The potential, \eqref{newton-potential-z}, thus expands as
 
 \begin{equation}
-    \label{netwon-pot-expanded-z}
+    \label{netwon-pot-expanded-z-2}
     \Phi(z + R) = -\frac{GM}{R} + \frac{GM}{R^2}z - \frac{GM}{R^3}z^2 + ...
 \end{equation}
 
@@ -733,12 +733,41 @@ Thus the potnetial is
     \Phi(z + R) = \Phi_0 + gz - \frac{g}{R}z^2 + ...
 \end{equation}
 
-It can be shown that the Riemann curvature components are proportional to the second derivatives of the potential. In our case the second derivative is
+It can be shown that the Riemann curvature components are proportional to the second derivatives of the potential. In $c = 1$ units, the Riemann curvature compoents are proportional to
+
+\begin{equation}
+    R^i _{tjt} = \delta^{ik} \partial_k \partial_j \Phi
+\end{equation}
+
+In our case the second derivative is
 
 \begin{equation}
     \frac{\partial ^2 \Phi}{\partial z^2} = -\frac{2g}{R} + ...
 \end{equation}
 
+The potential \eqref{netwon-pot-expanded-z-2} can be refined by defining the total radial separation in term of cartesian coordiantes,
 
+\begin{equation}
+    r = \sqrt{(R + z)^2 + x^2 + y^2}.
+\end{equation}
+
+The second order expansion of the potential becomes
+
+\begin{equation}
+    \Phi(z + R) = \Phi_0 + gz + \frac{g}{2R}(x^2 + y^2) - \frac{g}{R}z^2 + ...
+\end{equation}
+
+The diagonal second derivatives are thus:
+
+\begin{equation}
+    \partial_i \partial_j \Phi = 
+    \begin{pmatrix}
+        -\frac{g}{R} & 0  & 0\\
+        0 & -\frac{g}{R} & 0\\
+        0 & 0 & \frac{2g}{R}
+    \end{pmatrix}
+\end{equation}
+
+\subsection{Tidal Accelerations}
 
 \end{document}
