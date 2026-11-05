@@ -684,4 +684,61 @@ Stated more formally, the equation of geodesic deviation is
 \end{equation}
 
 this being the second covariant derivative of the geodesic deviation four-vector. It is clear that the second derivatives vanish in the case of a vanishing Riemann curvature, as is the case in the Rindler coordinates. These vanishing derivative of geodesic deviation manifests physically in local measurements of separation for matter arrangements. Consider a configuration of test particles in a circle, all uniformly accelerated in the Rindler frame. What the vanishing equation of geodesic deviation means is that the local separation four vectors between the test particles, the circle configuration, will remain circularly as time progresses. The lack of tidal forces means that there will be no tidal bulges or deformities generated. 
+
+\subsection{Static Weak Field Metric}
+Consider, however, the case of a static weak field metric; a spacetime which approximates the spacetime at the surface of the earth. The metric has the form
+
+\begin{equation}
+    \label{static-weak-field}
+    ds^2 = -(1 + 2 \Phi) dt^2 + (1 - 2 \Phi)(dx^2 + dy^2 + dz^2)
+\end{equation}
+
+with $\Phi$ being the Newtonian potential,
+
+\begin{equation}
+    \label{newton-potential}
+    \Phi(r) = -\frac{GM}{r}.
+\end{equation}
+
+Consider the potential at some height $z$ above the Earth's surface, denoted $R$ from the center of gravitational mass. The potential can be written as
+
+\begin{equation}
+    \label{newton-potential-z}
+    \Phi(z + R) = -\frac{GM}{R+z}.
+\end{equation}
+
+As $R >>> z$, we can expand the denominator as
+
+\begin{equation}
+    \frac{1}{R + z} = \frac{1}{R}\left( 1- \frac{z}{R} + \frac{z^2}{R^2} + ... \right).
+\end{equation}
+
+The potential, \eqref{newton-potential-z}, thus expands as
+
+\begin{equation}
+    \label{netwon-pot-expanded-z}
+    \Phi(z + R) = -\frac{GM}{R} + \frac{GM}{R^2}z - \frac{GM}{R^3}z^2 + ...
+\end{equation}
+
+Note that acceleration due to gravity, on Earth, is given by
+
+\begin{equation}
+    \label{g-def}
+    g = \frac{GM}{R^2}.
+\end{equation}
+
+Thus the potnetial is
+
+\begin{equation}
+    \Phi(z + R) = \Phi_0 + gz - \frac{g}{R}z^2 + ...
+\end{equation}
+
+It can be shown that the Riemann curvature components are proportional to the second derivatives of the potential. In our case the second derivative is
+
+\begin{equation}
+    \frac{\partial ^2 \Phi}{\partial z^2} = -\frac{2g}{R} + ...
+\end{equation}
+
+
+
 \end{document}
