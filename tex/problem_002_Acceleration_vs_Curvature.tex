@@ -736,6 +736,7 @@ Thus the potnetial is
 It can be shown that the Riemann curvature components are proportional to the second derivatives of the potential. In $c = 1$ units, the Riemann curvature compoents are proportional to
 
 \begin{equation}
+    \label{riemann-staic-weak-field}
     R^i _{tjt} = \delta^{ik} \partial_k \partial_j \Phi
 \end{equation}
 
@@ -769,5 +770,38 @@ The diagonal second derivatives are thus:
 \end{equation}
 
 \subsection{Tidal Accelerations}
+
+The tidal effects of gravitational fields provide an oppurtunity in distinguishing between accelerated frames in flat spacetime, and truly curved spacetime. Tidal effects cause relative spatial deviations between matter; the oceans tides bulge along the radial axis of the moon and Earths separation vector, while they contract along the orthogonal axis. These effects can be measured and, using Newtons universal theory of gravitation, can be used to determine the strength of the gravitational field itself. Specifically what is measured is the so-called tidal accelerations. These are the accelerations of separation vectors between test matter. 
+
+Consider a configuration of matter under the influence of a Newtonian gravitational potential, $\Phi$. Consider two test particles whose spatial separation is described by the vector $\vec{\chi}$. The test matter will fall under tidal acceleration, whose magnitude will vary depending on seperation. There will be differences betweem the tidal accelerations of the test matter and, as such, their relative seperation will change over time. This is the physical origin of the tidal deformations of matter in the presence of gravitational fields. It can be shown that the Newtonian theory predicts a tidal acceleration with the form
+
+\begin{equation}
+    \label{tidal-acc-newton}
+    \frac{d^2 \chi}{dt^2} = - \delta^{ij} \left( \frac{\partial^2 \Phi}{\partial x^k \partial x^j} \right) \chi^k
+\end{equation}
+
+But of course the inverse is true as well. The gravitational potential $\Phi$ can be deduced by measuring local tidal deformations in the configuration of test matter. More generally the presence a gravitaitonal field can be deduced by observing the relative motion of local matter. Likewise, the absence of a gravitational field can be inferred by the absence of relative tidal accelerations in accordance with the 1st Law.
+
+This idea applies similarly to General relativity. The presence of spacetime curvature can be deduced by the study of relative motion of test matter. Spacetime curvature induces relative spatial deviations in matter configurations, geodesic deviations. The separation vector, $\boldsymbol{\chi}$, is a four vector measuring the difference between two test particles. Under the influence of curved spacetime, the variation in the separation vector obeys a particular physical law. In curved spacetime this law is governed by
+
+\begin{equation}
+    \label{geodesic-equation}
+    (\boldsymbol{\nabla}_{\boldsymbol{u}} \boldsymbol{\nabla}_{\boldsymbol{u}} \boldsymbol{\chi})^{\alpha} = R^{\alpha}_{\beta \gamma \delta} u^{\beta} u^{\delta} \chi^{\gamma}
+\end{equation}
+
+the equation of geodesic deviation. It indicates that the second derivatives the of the seperation vector, the accelerations, are proportional to the Riemann curvature. It can be shown that in a freely falling frame the equation of geodesic deviation takes the form
+
+\begin{equation}
+    \label{geodesic-eq-LIF}
+    \frac{d^2\chi^{\alpha}}{d \tau^2} = - R^{\hat{\alpha}}_{\hat{\tau} \hat{\beta} \hat{\tau}} \chi^{\hat{\beta}}.
+\end{equation}
+
+Using \eqref{riemann-staic-weak-field} the tidal accelerations take the form
+
+\begin{equation}
+    \label{geodesic-eq-LIF}
+    \frac{d^2\chi^{\alpha}}{d \tau^2} = - \delta^{ik} \partial_k \partial_j \Phi \chi^{\hat{\beta}}.
+\end{equation}
+
 
 \end{document}
