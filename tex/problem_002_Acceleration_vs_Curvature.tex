@@ -39,7 +39,7 @@ Further, we will attempt to produce a coordinate transformation, $x \rightarrow 
     ds^2 = -dt'^2 + dx'^2 + dy'^2 + dz'^2
 \end{equation}
 
-These two results would demonstrate the following physical facts: th spacetime described by the metric \eqref{uniform metric} is flat, even though on first glance it does not look so; there exists a coordinate transformation under which the spacetime is described by the usual flat Minkowski metric. Prior to solving the above-stated problem, a thought-experiment is worthwhile to encourage the specific line of inquiry this article will tackle.
+These two results would demonstrate the following physical facts: the spacetime described by the metric \eqref{uniform metric} is flat, even though on first glance it does not look so; there exists a coordinate transformation under which the spacetime is described by the usual flat Minkowski metric. Prior to solving the above-stated problem, a thought-experiment is worthwhile to encourage the specific line of inquiry this article will tackle.
 
 \subsection{Acceleration or Gravity?}
 
@@ -839,7 +839,18 @@ The separation vectors, \eqref{radial-separation-vector-result} and \eqref{perp-
     \Delta \chi_r = \frac{gL}{R} \tau^2 \approx \frac{(9.81\,\frac{\mathrm{m}}{\mathrm{s}^2}) (1\,\mathrm{m})}{6.371 \times 10^6\,\mathrm{m}} (1\,\mathrm{s})^2 \approx 1.54 \times 10^{-6}\,\mathrm{m}
 \end{equation}
 
-On the order of micrometers. While small, this variation in proper distances is well within the range of technology capable of measuring said variations. For instance, the LIGO detector has achieved sensitivities on the order of $10^{-18}$ m. LIGO however requires interferometers with a length of 4 km, however. In order to measure a proper distance variation on the order of \eqref{estimate-radial-proper-distance} you would require a strain sensitivity with the same order of magnitude; an order of magnitude $10^{11}$ less sensitive than the LIGO strain detectors. In 
+On the order of micrometers. While small, this variation in proper distances is well within the range of technology capable of measuring said variations. For instance, the LIGO detector has achieved sensitivities on the order of $10^{-18}$ m. LIGO however requires interferometers with a length of 4 km, however. In order to measure a proper distance variation on the order of \eqref{estimate-radial-proper-distance} you would require a strain sensitivity with the same order of magnitude; an order of magnitude $10^{11}$ less sensitive than the LIGO strain detectors. In fact, under the above describe conditions, an optical interferometer could be used such as a Michelson laser interferometer.
+
+\subsection{Laser Interferometry Sketch}
+
+Let us expand on this thought-experiment for a moment. We modify the physical configuration of our test particle and observer free fall experiment. The test particles are now fitted with a reflector which is directed at the freely falling observer at the origin of the ring. The observer will carry the basic instruments to conduct a Michelson interferometer test: a laser, beamsplitter, photodector, and a clock. We consider two test particles fittted with mirrors: $M_r$ which is fitted to the test particle aligned with the radial arm $L_r$, and $M_\perp$ fitted to the test particle aligned with the transverse arm $L_\perp$. The experiment functions as a standard Michelson interferometry experiment: a laser of some initial intensity is split by a beam splitte and directed at $M_r$ and $M_\perp$. The light is reflected by the test particles and then passed through to the photodector where the waves a combined. In practice a difference in physical distance $\Delta L$ between the radial and transverse separations will manifest as a detectable phase change $\delta \phi$.
+
+The difference between the physical distances is the difference between \eqref{radial-separation-vector-result} and \eqref{perp-separation-vector-result}. The result is
+
+\begin{equation}
+    \label{physical-diff-michelson}
+    \Delta L = L + \frac{gL}{R} \tau^2 - \left( L -\frac{gL}{2R} \tau^2 \right)
+\end{equation}
 
 
 \end{document}
