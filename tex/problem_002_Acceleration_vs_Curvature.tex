@@ -1,6 +1,24 @@
 \documentclass[11pt]{article}
 
+% required libs
+%\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
 
+%tikz config
+\usetikzlibrary{arrows.meta,calc,positioning,decorations.markings}
+\pagestyle{empty}
+\definecolor{flatblue}{RGB}{31,110,165}
+\definecolor{curvedred}{RGB}{184,71,65}
+\definecolor{lightgray}{RGB}{150,158,166}
+\tikzset{
+ particle/.style={circle,fill=black,inner sep=1.55pt},
+ centerparticle/.style={circle,fill=white,draw=black,thick,inner sep=2.3pt},
+ fieldarrow/.style={-{Stealth[length=2.2mm]},line width=0.75pt},
+ laserbeam/.style={line width=1.6pt,flatblue},
+ armbeam/.style={line width=1.6pt,curvedred},
+ mirror/.style={line width=2.4pt,black},
+}
 
 \input{../common/preamble}
 \input{../common/macros}
@@ -808,7 +826,27 @@ Using \eqref{riemann-staic-weak-field} the tidal accelerations take the form
 
 \subsection{Tidal Effects: Acceleration versus Gravity}
 
-Using the tidal accelerations derived above for the weak static field metric, we can construct a thought experiment to discriminate between these two physical scenarios. Consider two initially circular configurations of freely falling test particles. Initially a central observer lies at the center of the test-mass ring configuration. $F_1$ is the Rindler/Minkowski frame and $F2$ is the weak-field frame. The experimental apparatus is devised in such a way that the observer can measure relative proper distance between the test particles.\footnote{Comment regarding interferometry used in gravitational wave observersation.} The ring has a radius $L$.
+Using the tidal accelerations derived above for the weak static field metric, we can construct a thought experiment to discriminate between these two physical scenarios. Consider two initially circular configurations of freely falling test particles. Initially a central observer lies at the center of the test-mass ring configuration. $\mathcal F_1$ is the Rindler/Minkowski frame and $\mathcal F_2$ is the weak-field frame. The experimental apparatus is devised in such a way that the observer can measure relative proper distance between the test particles.\footnote{Comment regarding interferometry used in gravitational wave observersation.} The ring has a radius $L$.
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=1.05,font=\small]
+  \foreach \shift/\frame/\desc in {0/{\mathcal F_1}/{\text{Minkowski (Rindler Observer)}},7/{\mathcal F_2}/{\text{Weak-field, curved spacetime}}} {
+    \begin{scope}[shift={(\shift,0)}]
+      \draw[gray!55,thin] (-2.25,0)--(2.25,0) node[right] {$x$};
+      \draw[gray!55,thin] (0,-2.25)--(0,2.25) node[above] {$z$};
+      \draw[flatblue,thick] (0,0) circle (1.65);
+      \foreach \ang in {0,30,...,330} {\node[particle] at (\ang:1.65) {};}
+      \node[centerparticle] at (0,0) {};
+      \draw[<->,>=Stealth] (0,0.10)--(0,1.60) node[midway,right] {$L$};
+      \node at (0,-2.8) {$\frame$};
+      \node[align=center,text width=5.4cm] at (0,-3.35) {\desc};
+    \end{scope}
+  }
+  \node at (3.5,2.75) {$\tau=0:\quad \dot\xi^{\hat i}(0)=0$};
+\end{tikzpicture}
+\caption{Both configurations have the same initial proper radius $L$ and zero initial relative velocity in their respective local freely falling frames. The depiction uses a vertical $xz$ plane.}
+\end{figure}
 
 In the first experiment the comoving observer will observe a static ring configuration. The geodesic deviation vanishes since there are no tidal accelerations. There are no tidal accelerations since the Riemann curvature vanishes. These statements are all downstream from the fact that the comoving observer and the freely falling test particles are moving in flat Minkowski spacetime, uniformly accelerated under hyperbolic motion. \
 
