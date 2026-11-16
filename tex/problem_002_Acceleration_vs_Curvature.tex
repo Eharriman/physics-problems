@@ -852,6 +852,42 @@ In the first experiment the comoving observer will observe a static ring configu
 
 In the case of curved spacetime, however, \eqref{geodesic-eq-LIF} yields nonvanishing tidal accelerations. The test-particle ring will experience tidal deformation. In accordance with the hessian \eqref{tidal-acc-hessian} we see that the ring configuration will contract in the transverse directions, along the x and y axis; the ring will bulge in the radial direction along the z axis. This tidal deformation will manifest in deformation of the proper distance between the tests particles. 
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=1.05,font=\small]
+  \def\rad{1.65}
+  \def\radial{2.10}
+  \def\transverse{1.43}
+  \begin{scope}[shift={(0,0)}]
+    \draw[gray!50,thin] (-2.25,0)--(2.25,0) node[right] {$x$};
+    \draw[gray!50,thin] (0,-2.35)--(0,2.35) node[above] {$z$};
+    \draw[flatblue,thick] (0,0) circle (\rad);
+    \foreach \ang in {0,30,...,330} {\node[particle] at (\ang:\rad) {};}
+    \node[centerparticle] at (0,0) {};
+    \node at (0,-2.85) {$\mathcal F_1$ (flat)};
+    \node at (0,-3.3) {$\Delta \chi_r=\Delta \chi_\perp=0$};
+  \end{scope}
+  \begin{scope}[shift={(7,0)}]
+    \draw[gray!50,thin] (-2.25,0)--(2.25,0) node[right] {$x$};
+    \draw[gray!50,thin] (0,-2.35)--(0,2.35) node[above] {$z$};
+    \draw[dashed,gray!55] (0,0) circle (\rad);
+    \draw[curvedred,very thick] (0,0) ellipse ({\transverse} and {\radial});
+    \foreach \ang in {0,30,...,330} {
+      \node[particle] at ({\transverse*cos(\ang)},{\radial*sin(\ang)}) {};
+    }
+    \node[centerparticle] at (0,0) {};
+    \draw[fieldarrow,curvedred] (0,1.67)--(0,2.35);
+    \draw[fieldarrow,curvedred] (0,-1.67)--(0,-2.35);
+    \draw[fieldarrow,curvedred] (1.65,0)--(1.19,0);
+    \draw[fieldarrow,curvedred] (-1.65,0)--(-1.19,0);
+    \node at (0,-2.85) {$\mathcal F_2$ (curved)};
+    \node at (0,-3.3) {$\Delta \chi_r>0,\quad\Delta \chi_\perp<0$};
+  \end{scope}
+  \node at (3.5,2.75) {$\tau>0$};
+\end{tikzpicture}
+\caption{Exaggerated tidal deformation of initially comoving freely falling test particles. The dashed circle is the initial configuration. To leading order near Earth, $\Delta \chi_r\simeq(gL/R_\oplus)\tau^2$ and $\Delta \chi_\perp\simeq -(gL/2R_\oplus)\tau^2$. The flat case is represented in a common local inertial frame, even if Rindler coordinates are used to describe it.}
+\end{figure}
+
 We can approximate the actual deformation by considering short observattions. For short times the equation of geodesic deviation, \eqref{geodesic-eq-LIF}, can be approximated as
 
 \begin{equation}
@@ -934,5 +970,7 @@ We should note that the derivation for variation in physical distance due to tid
 \section{Conclusions}
 
 The purpose of this article was to provide an explicit distinction between uniform accelerated frames and uniform gravitational fields. Section 2.1 proved that the Riemann components vanishes for all indices given the uniform metric \eqref{uniform metric}. We went on to show that this result is easily understood if one realizes that the metric can be transformed into the Minkowski metric using a coordinate transformations \eqref{hyperbolic-t-coord} and \eqref{hyperbolic-x-coord}. The observer undergoing uniform proper acceleration in flat spacetime, still exists in a flat spacetime background. The physical observations taken by this observer in their frame can be explained, by an observer at rest, in flat Minkowksi spacetime and attribute them to accelerated motion. We have shown some of the similarties between uniform acceleration and uniform gravity, such as the red shifting of light. The discussion regarding tidal accelerations, however, indicated that the non-vanishing Riemann curvature of curved spacetime, such as the weak-field static metric, does indeed manifest physically. The deformation of material configurations by tidal accelerations is a measurable phenomena. In approximating this phenomena, we suggested a seemingly plausible, if not chaotic, experiment of a freely falling Michelson interferometer. The result \eqref{phase-diff-2} for the phase difference would be a empirical result, and one that would differ between the frames. In the case of uniform acceleration, the phase difference would be vanishingly small if experimental controls were in place. This is because the freely falling test particles, in flat spacetime, due not undergo any relative motion attributed to tidal accelerations. In the case of the weak-field static metric the variation in physical distance is non-zero. In the sketched apparatus, tidal elongation along the radial axis and transverse contraction would result in the reflected light along the transverse distance travelling a \textit{shorter} distance than the light travelling the radial arm. Once the light is recombined at the photodetector a phase distance, due to these arm length variations, would be measurable by the interference pattern. 
+
+This inquiry indicates that there is a definite local constraint on the equivalence principle. We have provided an example of a local experiment, the freely falling Michelson interferometer, that can discriminate between freely falling frames in flat spacetime and those in a weak-field potential. We could further extend this discussion to experiments conducted by the uniform accelerating observers in flat spacetime, and those at rest in a uniform weak-field. Regardless of the experimental construction, the existence of tidal accelerations due to Riemann curvature in the spacetime with gravity, means that, in principle, these acceleations are measurable. As such one could construct experiments to measure the relative motion of tests masses and discern whether they are undergoing tidal accelerations, and by deduction assert the presence of a local gravitational field. The conclusion, then, is that an accelerated coordinate system in Minkowski spacetime cannot reproduce all of the phenomena of gravity.
 
 \end{document}
