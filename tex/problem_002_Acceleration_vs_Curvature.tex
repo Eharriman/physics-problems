@@ -849,8 +849,49 @@ The difference between the physical distances is the difference between \eqref{r
 
 \begin{equation}
     \label{physical-diff-michelson}
-    \Delta L = L + \frac{gL}{R} \tau^2 - \left( L -\frac{gL}{2R} \tau^2 \right)
+    \Delta L = L + \frac{gL}{R_{\oplus}} \tau^2 - \left( L -\frac{gL}{2R_{\oplus}} \tau^2 \right) = \frac{3gL}{2R_{\oplus}}\tau^2.
 \end{equation}
 
 
+The difference in length is due to a tidal radial elongation and transverse contraction. 
+
+For a Michelson arm of length $L$, the round trip distance (from the beam splitter and back) is $2L$. A displacement of $\delta L$ results in a phase difference
+
+\begin{equation}
+    \label{phase-diff-1}
+    \delta \phi = 2 k \delta L
+\end{equation}
+
+where k is the wave number of light with wavelength $\lambda$
+
+\begin{equation}
+    \label{wave-number}
+    k = \frac{2 \pi}{\lambda}.
+\end{equation}
+
+\eqref{phase-diff-1} can be written in terms of the wavelength of light,
+
+\begin{equation}
+    \label{phase-diff-2}
+    \delta \phi = \frac{4 \pi}{\lambda} \delta L.
+\end{equation}
+
+Using the approximate difference in physical distance, \eqref{physical-diff-michelson}, we would expect a phase difference in the form of
+
+\begin{equation}
+    \delta \phi = \frac{6 \pi gL}{\lambda R_{\oplus}}\tau^2.
+\end{equation}
+
+We can consider an estimate of the effect given rough physical measurements. Consider a freely falling lab near the surface of the earth with a 633 nm helium-neon laser, $L = 1.0 \mathrm{m}$, and an experiment carried out of the course of $0.10 \mathrm{s}$. The phase difference would
+    
+\begin{equation}
+    \label{phase-diff-est}
+    \delta \phi = \frac{6 \pi (9.81 \mathrm{m}/\mathrm{s}^2)(1.0 \mathrm{m})}{\left(6.33 \times 10^{-7} \mathrm{m}\right) \left(6.371 \times 10^6 \mathrm{m}\right)}(0.10 \mathrm{s})^2 \approx 0.459.
+\end{equation}
+
+We should note that the derivation for variation in physical distance due to tidal deformations was based on small, local measurements. We would expect that this result holds for quick experiments. In a realistic application of this experimental apparatus, various controls would need to be taken into account. The thought experiment assumes freely falling test particles and comoving observers. Thus, an experimental consideration would need to take into account the construction of a Michelson interferometer, absent rigid supprts, electromagnetic forces, and other affects which could interfere with the signal.
+
+\section{Conclusions}
+
+The purpose of this article was to provide an explicit distinction between uniform accelerated frames and uniform gravitational fields. Section 2.1 proved that the Riemann components vanishes for all indices given the uniform metric \eqref{uniform metric}. We went on to show that this result is easily understood if one realizes that the metric can be transformed into the Minkowski metric using a coordinate transformations \eqref{hyperbolic-t-coord} and \eqref{hyperbolic-x-coord}. The observer undergoing uniform proper acceleration in flat spacetime, still exists in a flat spacetime background. The physical observations taken by this observer in their frame can be explained, by an observer at rest, in flat Minkowksi spacetime and attribute them to accelerated motion. We have shown some of the similarties between uniform acceleration and uniform gravity, such as the red shifting of light. The discussion regarding tidal accelerations, however, indicated that the non-vanishing Riemann curvature of curved spacetime, such as the weak-field static metric, does indeed manifest physically. The deformation of material configurations by tidal accelerations is a measurable phenomena. In approximating this phenomena, we suggested a seemingly plausible, if not chaotic, experiment of a freely falling Michelson interferometer. The result \eqref{phase-diff-2} for the phase difference would be a empirical result, and one that would differ between the frames. In the case of uniform acceleration, the phase difference would be vanishingly small if experimental controls were in place. This is because the freely falling test particles, in flat spacetime, due not undergo any relative motion attributed to tidal accelerations. In the case of the weak-field static metric the variation in physical distance is non-zero. In the sketched apparatus, tidal elongation along the radial axis and transverse contraction would result in the reflected light along the transverse distance travelling a \textit{shorter} distance than the light travelling the radial arm. Once the light is recombined at the photodetector a phase distance, due to these arm length variations, would be measurable by the interference pattern. 
 \end{document}
