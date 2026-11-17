@@ -921,6 +921,41 @@ On the order of micrometers. While small, this variation in proper distances is 
 
 Let us expand on this thought-experiment for a moment. We modify the physical configuration of our test particle and observer free fall experiment. The test particles are now fitted with a reflector which is directed at the freely falling observer at the origin of the ring. The observer will carry the basic instruments to conduct a Michelson interferometer test: a laser, beamsplitter, photodector, and a clock. We consider two test particles fittted with mirrors: $M_r$ which is fitted to the test particle aligned with the radial arm $L_r$, and $M_\perp$ fitted to the test particle aligned with the transverse arm $L_\perp$. The experiment functions as a standard Michelson interferometry experiment: a laser of some initial intensity is split by a beam splitte and directed at $M_r$ and $M_\perp$. The light is reflected by the test particles and then passed through to the photodector where the waves a combined. In practice a difference in physical distance $\Delta L$ between the radial and transverse separations will manifest as a detectable phase change $\delta \phi$.
 
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[scale=1.15,font=\small]
+  \coordinate (BS) at (0,0);
+  \coordinate (R) at (0,3.1);
+  \coordinate (H) at (3.1,0);
+  \coordinate (SRC) at (-2.35,0);
+  \coordinate (DET) at (0,-1.9);
+  % Additional test particles on initial ring (schematic)
+  \draw[gray!50,dashed] (BS) circle (3.1);
+  \foreach \ang in {30,60,120,150,210,240,300,330} {
+    \node[circle,fill=gray!65,inner sep=1.45pt] at (\ang:3.1) {};
+  }
+  % Optical paths / input-output
+  \draw[laserbeam,-{Stealth[length=2mm]}] (SRC)--(-.18,0);
+  \draw[laserbeam] (BS)--(R);
+  \draw[armbeam] (BS)--(H);
+  \draw[laserbeam,dashed,-{Stealth[length=2mm]}] (BS)--(DET);
+  % central beamsplitter and mirrors
+  \draw[fill=white,draw=black,thick,rotate around={45:(BS)}] (-.15,-.055) rectangle (.15,.055);
+  \draw[mirror] (-.26,3.1)--(.26,3.1);
+  \draw[mirror] (3.1,-.26)--(3.1,.26);
+  \node[draw,fill=white,rounded corners=2pt,inner sep=4pt] at (SRC) {Laser};
+  \node[draw,fill=white,rounded corners=2pt,inner sep=4pt] at (DET) {Photodetector};
+  \node[above right] at (R) {$M_r$ (free)};
+  \node[above right] at (H) {$M_\perp$ (free)};
+  \node[below left] at (-.20,-.27) {$O$ / beamsplitter};
+  \node[right,flatblue] at (.15,1.62) {radial arm $L_r$};
+  \node[below,curvedred] at (1.65,-.30) {transverse arm $L_\perp$};
+  \draw[fieldarrow] (4.1,1.1)--(4.1,2.2) node[above] {$+\hat r$};
+  \node[align=left,text width=4.5cm] at (1.1,-4.0) {Selected ring particles carry reflectors; all test mirrors follow independent geodesics.};
+\end{tikzpicture}
+\caption{Michelson interferometer in a freely falling local frame. A laser and beamsplitter co-move with the central observer $O$, while the end mirrors $M_r$ and $M_\perp$ are freely falling test masses. The remaining ring particles are shown in gray. To leading order, $\delta\phi\simeq(4\pi/\lambda)(\delta L_r-\delta L_\perp)$.}
+\end{figure}
+
 The difference between the physical distances is the difference between \eqref{radial-separation-vector-result} and \eqref{perp-separation-vector-result}. The result is
 
 \begin{equation}
