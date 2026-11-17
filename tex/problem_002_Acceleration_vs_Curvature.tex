@@ -69,13 +69,13 @@ Consider an observer in an elevator whose construction is sufficient to isolate 
 
 Question: are there any experiments the internal observer can perform that would allow them to discriminate between the physical scenario a) and b)? In other words, are there any experiments that the internal observer could perform that would allow them to determine whether they were under a uniform gravitational field, or under uniform accelerated motion?
 
-Those familiar with descriptions of the Equivalence Principle would answer in the negative: all \textit{local} experiments will be indinguishable between scenario a) and b). Objects dropped will accelerate down to the floor with the same rates. In the former scenario this is due to the uniform gravitational acceleration, in the latter case this is due to Newton's First Law: the elevator floor accelerates up to the released object at the same acceleration as the uniform gravitiational field. The Equivalence Principle seems to indicate that these two scenarios are identical. I recall learning that the beauty of General Relativity was Einstein's insight: if these two scenarios are indistinguishable, then their physical origin should be indistinguishable as well. That is: acceleration and gravity are one in the same.
+Those familiar with descriptions of the Equivalence Principle would answer in the negative. All \textit{local} experiments will be indinguishable between scenario a) and b). Objects dropped will accelerate down to the floor with the same rates. In the former scenario this is due to the uniform gravitational acceleration, in the latter case this is due to Newton's First Law: the elevator floor accelerates up to the released object at the same acceleration as the uniform gravitiational field. The Equivalence Principle seems to indicate that these two scenarios are identical. I recall learning that the beauty of General Relativity was Einstein's insight: if these two scenarios are indistinguishable, then their physical origin should be indistinguishable as well. That is: acceleration and gravity are one in the same.
 
 \section{Vanishing Curvature}
 
 \subsection{Specific Case}
 
-Consider the equation for the Christoffel symbols
+Consider the formula for the Christoffel symbols
 
 \begin{equation}
     \label{christ-awful-1}
@@ -87,77 +87,77 @@ where we use the shorthand $\partial_{\gamma} = \frac{\partial}{\partial x^{\gam
 
 \begin{equation}
     \label{christ-awful-t}
-    \Gamma^{t}_{\beta \gamma} = \frac{1}{2} g^{t t} \left( \partial_{\gamma} g_{t t} + \partial_{t} g_{t t} - \partial_{t} g_{\beta \gamma}\right)
+    \Gamma^{t}_{\beta \gamma} = \frac{1}{2} g^{t t} \left( \partial_{\gamma} g_{t t} + \partial_{t} g_{t t} - \partial_{t} g_{\beta \gamma}\right).
 \end{equation}
 
 For the uniform metric the time derivatives vanish. The only non-vanishing component is found with $\gamma = x$
 
 \begin{equation}
     \label{christ-awful-t-2}
-    \Gamma^{t}_{t x} = \frac{1}{2} g^{t t} \left( \partial_{x} g_{t t}\right)
+    \Gamma^{t}_{t x} = \frac{1}{2} g^{t t} \left( \partial_{x} g_{t t}\right).
 \end{equation}
 
 $g^{t t}$ can be found using the identity
 
 \begin{equation}
     \label{metric-kronecker}
-    g^{\alpha \beta} g_{\alpha \beta} = \delta^{\alpha} _{\beta}
+    g^{\alpha \beta} g_{\alpha \beta} = \delta^{\alpha} _{\beta}.
 \end{equation}
 
 And the derivative in \eqref{christ-awful-t-2} is
 
 \begin{equation}
     \label{x-derivative-explicit}
-    \partial_{x} g_{t t} = 2 (1 + gx) g
+    \partial_{x} g_{t t} = 2 (1 + gx) g.
 \end{equation}
 
 Thus
 
 \begin{equation}
     \label{christ-awful-t-3}
-    \Gamma^{t}_{t x} = g (1 + gx)^{-1}
+    \Gamma^{t}_{t x} = g (1 + gx)^{-1}.
 \end{equation}
 
 Using the symmetry of the Christoffel symbols we also have $\Gamma^{t}_{t x} = \Gamma^{t}_{x t}$. The other case is determined with $\alpha = x$. This results in
 
 \begin{equation}
     \label{christ-awful-x}
-    \Gamma^{x}_{t t} = \frac{1}{2} g^{x x} \left( \partial_{t} g_{\delta t} + \partial_{t} g_{\delta t} - \partial_{\delta} g_{t t}\right)
+    \Gamma^{x}_{t t} = \frac{1}{2} g^{x x} \left( \partial_{t} g_{\delta t} + \partial_{t} g_{\delta t} - \partial_{\delta} g_{t t}\right).
 \end{equation}
 
 Using the same arguments as above, this results in
 
 \begin{equation}
     \label{christ-awful-x-1}
-    \Gamma^{x}_{t t} = \frac{1}{2} g^{x x} \left( - \partial_{x} g_{t t}\right) = g(1 + gx)
+    \Gamma^{x}_{t t} = \frac{1}{2} g^{x x} \left( - \partial_{x} g_{t t}\right) = g(1 + gx).
 \end{equation}
 
 In coordinate components the Riemann curvature is
 
 \begin{equation}
     \label{Riemmann-curv-formula}
-    R^{\alpha} _{\beta \gamma \delta} = \partial_{\gamma} \Gamma^{\alpha}_{\beta \delta} - \partial_{\delta} \Gamma^{\alpha}_{\beta \gamma} + \Gamma^{\alpha}_{\gamma \epsilon} \Gamma^{\epsilon}_{\beta \delta} - \Gamma^{\alpha}_{\delta \epsilon} \Gamma^{\epsilon}_{\beta \gamma}
+    R^{\alpha} _{\beta \gamma \delta} = \partial_{\gamma} \Gamma^{\alpha}_{\beta \delta} - \partial_{\delta} \Gamma^{\alpha}_{\beta \gamma} + \Gamma^{\alpha}_{\gamma \epsilon} \Gamma^{\epsilon}_{\beta \delta} - \Gamma^{\alpha}_{\delta \epsilon} \Gamma^{\epsilon}_{\beta \gamma}.
 \end{equation}
 
 Fix the only case with non-zero Christoffel symbols using $\alpha = t$
 
 \begin{equation}
     \label{Riemmann-curv-formula-t-x}
-    R^{t} _{\beta \gamma \delta} = \partial_{\gamma} \Gamma^{t}_{\beta \delta} - \partial_{\delta} \Gamma^{t}_{\beta \gamma} + \Gamma^{t}_{\gamma \epsilon} \Gamma^{\epsilon}_{\beta \delta} - \Gamma^{t}_{\delta \epsilon} \Gamma^{\epsilon}_{\beta \gamma}
+    R^{t} _{\beta \gamma \delta} = \partial_{\gamma} \Gamma^{t}_{\beta \delta} - \partial_{\delta} \Gamma^{t}_{\beta \gamma} + \Gamma^{t}_{\gamma \epsilon} \Gamma^{\epsilon}_{\beta \delta} - \Gamma^{t}_{\delta \epsilon} \Gamma^{\epsilon}_{\beta \gamma}.
 \end{equation}
 
 With only three non-vanishing Christoffel symbols (two of which are identical by symmetry) we have only two cases. Consider $\beta = t$ and $\delta = x$. The only non-zero derivative forces $\gamma = x$. Thus:
 
 \begin{equation}
     \label{Riemmann-curv-formula-t-x}
-    R^{t} _{t x x} = \partial_{x} \Gamma^{t}_{t x} - \partial_{x} \Gamma^{t}_{t x} + \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{t x} - \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{t x}
+    R^{t} _{t x x} = \partial_{x} \Gamma^{t}_{t x} - \partial_{x} \Gamma^{t}_{t x} + \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{t x} - \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{t x}.
 \end{equation}
 
 The only non-vanishing Christoffel symbol forces $\epsilon = t$. The double Christoffel terms thus vanish by symmetry. So too does the first derivatives. Thus
 
 \begin{equation}
     \label{Riemmann-curv-formula-t-x-2}
-    R^{t} _{t x x} = 0
+    R^{t} _{t x x} = 0.
 \end{equation}
 
 An identical argument with $\alpha = x$ shows that all Riemann components vanish. Recall that the Riemann curvature tensor is used to quantify local curvature. If all components vanish then the space is flat. We thus conclude that the spacetime described by \eqref{uniform metric} is flat.
