@@ -168,14 +168,14 @@ It is worth proving that \eqref{uniform metric} is an example of a more general 
 
 \begin{equation}
     \label{gen-uni-metric}
-    ds^2  = -f^2(x) dt^2 + dx^2 + dy^2 + dz^2
+    ds^2  = -f^2(x) dt^2 + dx^2 + dy^2 + dz^2,
 \end{equation}
 
 where $f(x)$ is a function of the coordinate x alone. The Christoffel symbols for this metric reduce to two cases. Firstly
 
 \begin{equation}
     \label{christ-awful-t-f}
-    \Gamma^{t}_{\beta \gamma} = \frac{1}{2} g^{t t} \left( \partial_{\gamma} g_{t t} + \partial_{t} g_{t t} - \partial_{t} g_{\beta \gamma}\right)
+    \Gamma^{t}_{\beta \gamma} = \frac{1}{2} g^{t t} \left( \partial_{\gamma} g_{t t} + \partial_{t} g_{t t} - \partial_{t} g_{\beta \gamma}\right).
 \end{equation}
 
 This simplifies with the only non-zero derivative setting $\gamma = x$
@@ -186,7 +186,7 @@ This simplifies with the only non-zero derivative setting $\gamma = x$
     \Gamma^{t}_{t x} & = \frac{1}{2} g^{t t} \left( \partial_{x} g_{t t}\right) \\
     & = \frac{1}{2} (-f^{-2}(x)) \partial_{x} (f^2(x)) \\
     & = f^{-2}(x) f(x) f'(x) \\
-    & = \frac{f'(x)}{f(x)} = \Gamma^{t}_{x t}
+    & = \frac{f'(x)}{f(x)} = \Gamma^{t}_{x t}.
     \end{split}
 \end{equation}
 
@@ -194,7 +194,7 @@ The second case has $\alpha = x$
 
 \begin{equation}
     \label{christ-awful-x-f}
-    \Gamma^{x}_{\beta \gamma} = \frac{1}{2} g^{x x} \left( \partial_{\gamma} g_{x x} + \partial_{\beta} g_{x x} - \partial_{\delta} g_{\beta \gamma}\right)
+    \Gamma^{x}_{\beta \gamma} = \frac{1}{2} g^{x x} \left( \partial_{\gamma} g_{x x} + \partial_{\beta} g_{x x} - \partial_{\delta} g_{\beta \gamma}\right).
 \end{equation}
 
 This simplifies in the only non-zero case setting $\delta = x$
@@ -204,7 +204,7 @@ This simplifies in the only non-zero case setting $\delta = x$
     \begin{split}
     \Gamma^{x}_{t t} & = \frac{1}{2} g^{xx} \left( - \partial_{x} g_{t t}\right) \\
     & = \frac{1}{2} (-\partial_{x} (-f^2(x))) \\
-    & = f(x) f'(x)
+    & = f(x) f'(x).
     \end{split}
 \end{equation}
 
@@ -217,7 +217,7 @@ There are four non-vanishing Riemann components; only two cases need be calculat
     & = -\partial_{x} \Gamma^{t}_{x t} - \Gamma^{t}_{x \epsilon} \Gamma^{\epsilon}_{x t} \\
     & = -\partial_{x} \left( \frac{f'(x)}{f(x)} \right) - \left( \frac{f'(x)}{f(x)} \right)^2 \\ 
     & = -\frac{f''(x)}{f(x)} + \left( \frac{f'(x)}{f(x)} \right)^2 - \left( \frac{f'(x)}{f(x)} \right)^2 \\
-    & = -\frac{f''(x)}{f(x)} = - R^{t} _{x x t}
+    & = -\frac{f''(x)}{f(x)} = - R^{t} _{x x t}.
     \end{split}
 \end{equation}
 
@@ -230,7 +230,7 @@ The second case is
     & = -\partial_{x} \Gamma^{x}_{t t} + \Gamma^{x}_{t t} \Gamma^{t}_{t x} \\
     & = -\partial_{x} (f(x) f'(x)) + (f(x) f'(x)) \left( \frac{f'(x)}{f(x)} \right) \\ 
     & = -(f'(x))^2 - f(x) f''(x) + (f(x))^2 \\
-    & = f(x) f''(x) = - R^{x} _{t t x}
+    & = f(x) f''(x) = - R^{x} _{t t x}.
     \end{split}
 \end{equation}
 
@@ -238,14 +238,14 @@ The condition of flat spacetime is one which requires vanishing Riemann curvatur
 
 \begin{equation}
     \label{2nd-f(x)-vanish}
-    f''(x) = 0
+    f''(x) = 0.
 \end{equation}
 
 The differential equation \eqref{2nd-f(x)-vanish} can be solved by integrating twice and yielding the form of $f(x)$
 
 \begin{equation}
     \label{f(x)-definition}
-    f(x) = Ax + B
+    f(x) = Ax + B,
 \end{equation}
 
 for constants $A$ and $B$.
