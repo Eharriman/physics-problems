@@ -284,7 +284,7 @@ The metric for these coordinates are found with
 
 \begin{equation}
     \label{hyperbolic-x-diff}
-    dX = \cosh(gt) dx + g(\frac{1}{g} + x) \sinh(gt) dt
+    dX = \cosh(gt) dx + g \left(\frac{1}{g} + x \right) \sinh(gt) dt.
 \end{equation}
 
 Consider the quadratic terms
@@ -296,21 +296,21 @@ Consider the quadratic terms
 
 \begin{equation}
     \label{hyperbolic-x-squared}
-    dX^2 = \cosh^2(gt) dx^2 + g\left(\frac{1}{g} + x\right) \cosh(gt) \sinh(gt) dx dt + g^2\left(\frac{1}{g} + x\right)^2 \sinh^2(gt) dt^2
+    dX^2 = \cosh^2(gt) dx^2 + g\left(\frac{1}{g} + x\right) \cosh(gt) \sinh(gt) dx dt + g^2\left(\frac{1}{g} + x\right)^2 \sinh^2(gt) dt^2.
 \end{equation}
 
 Then the flat space metric is
 
 \begin{equation}
     \label{flat-metric-coord}
-    -dT^2 + dX^2 = \left(\frac{1}{g} + x \right)^2 (\sinh^2(gt) - \cosh^2(gt))dt^2 + (\cosh^2(gt) - \sinh^2(gt)) dx^2
+    -dT^2 + dX^2 = \left(\frac{1}{g} + x \right)^2 (\sinh^2(gt) - \cosh^2(gt))dt^2 + (\cosh^2(gt) - \sinh^2(gt)) dx^2.
 \end{equation}
 
 This reduces to
 
 \begin{equation}
     \label{flat-metric-coord-2}
-    -dT^2 + dX^2 = -\left(\frac{1}{g} + x \right)^2 dt^2 +  dx^2
+    -dT^2 + dX^2 = -\left(\frac{1}{g} + x \right)^2 dt^2 +  dx^2.
 \end{equation}
 
 The hyperbolic coordinate transformations for the orthogonal components are trivial ($Y = y$, $Z = z$). Thus \eqref{flat-metric-coord-2} recovers the metric \eqref{uniform metric}.
@@ -321,63 +321,63 @@ The Rindler Coordinates\footnote{Transformations \eqref{hyperbolic-t-coord} and 
 
 \begin{equation}
     \label{world-line}
-    x^{\mu}(\tau) = (cT(\tau), X(\tau))
+    x^{\mu}(\tau) = (cT(\tau), X(\tau)).
 \end{equation}
 
 The four velocity is defined by the derivative with respect to proper time
 
 \begin{equation}
     \label{four-velocity}
-    U^{\mu} = \frac{dx^{\mu}}{d \tau} = \gamma(c, v)
+    U^{\mu} = \frac{dx^{\mu}}{d \tau} = \gamma(c, v),
 \end{equation}
 
 with the Lorentz factor defined as
 
 \begin{equation}
     \label{lorentz-factor}
-    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+    \gamma = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}},
 \end{equation}
 
 and the coordinate velocity defined as expected
 
 \begin{equation}
     \label{coordinate-velocity}
-    v = \frac{dX}{dT}
+    v = \frac{dX}{dT}.
 \end{equation}
 
 Similarly the four-acceleration is defined as the derivative
 
 \begin{equation}
     \label{four-acceleration}
-    A^{\mu} = \frac{dU^{\mu}}{d \tau}
+    A^{\mu} = \frac{dU^{\mu}}{d \tau}.
 \end{equation}
 
 Note that for timelike worldlines, the invariant four-velocity quantity demands
 
 \begin{equation}
     \label{four-vel-invariant}
-    U^{\mu}U_{\mu} = \eta_{\mu \nu} U^{\nu} U^{\mu} = -c^2
+    U^{\mu}U_{\mu} = \eta_{\mu \nu} U^{\nu} U^{\mu} = -c^2.
 \end{equation}
 
 It is important to show a geometric relation between the four-velocity and four-acceleration for this motion. Consider the derivative of \eqref{four-vel-invariant}:
 
 \begin{equation}
     \label{four-vel-derivative}
-    \frac{d \left( \eta_{\mu \nu} U^{\nu} U^{\mu}\right)} {d \tau} = \eta_{\mu \nu} \frac{dU^{\nu}}{d \tau} U^{\mu} + \eta_{\mu \nu} \frac{dU^{\mu}}{d \tau} U^{\nu} = \eta_{\mu \nu} A^{\nu} U^{\mu} + \eta_{\mu \nu} A^{\mu} U^{\nu} = 0
+    \frac{d \left( \eta_{\mu \nu} U^{\nu} U^{\mu}\right)} {d \tau} = \eta_{\mu \nu} \frac{dU^{\nu}}{d \tau} U^{\mu} + \eta_{\mu \nu} \frac{dU^{\mu}}{d \tau} U^{\nu} = \eta_{\mu \nu} A^{\nu} U^{\mu} + \eta_{\mu \nu} A^{\mu} U^{\nu} = 0.
 \end{equation}
 
 This condition forces orthogonality between the four-velocity and four-acceleration
 
 \begin{equation}
     \label{four-vel-acc-orthogonal}
-    U^{\mu} A_{\mu} = 0
+    U^{\mu} A_{\mu} = 0.
 \end{equation}
 
 Consider the invariant quantity for proper acceleration:
 
 \begin{equation}
     \label{proper-acc-invariant}
-    \alpha = \sqrt{A^{\mu} A_{\mu}}
+    \alpha = \sqrt{A^{\mu} A_{\mu}}.
 \end{equation}
 
 From the explicit defintion of the four velocity in \eqref{four-velocity} we have
@@ -391,21 +391,21 @@ with the coordinate acceleration defined as $a = \frac{dv}{dT}$. The invariant q
 
 \begin{equation}
     \label{proper-acc-invariant-explicit}
-    A^{\mu} A_{\mu} = \gamma^6 a^2
+    A^{\mu} A_{\mu} = \gamma^6 a^2.
 \end{equation}
 
 Thus the invariant proper acceleration is:
 
 \begin{equation}
     \label{alpha-proper-acc-invariant}
-    \alpha = \gamma^3 a
+    \alpha = \gamma^3 a.
 \end{equation}
 
-One can recover the Newtonian relation in the case of non-relativistic velocitities: specifically, the equality of coordinate and proper acceleration. In this case $v <<< c$, thus $\gamma \approx 1$ and this implies $\alpha \approx a$. A constant proper acceleration, $\alpha$, demands that the coordinate acceleration vary inversely with respect to coordinate time. Explicitly
+One can recover the Newtonian relation in the case of non-relativistic velocitities. Specifically the equality of coordinate and proper acceleration. In this case $v <<< c$, $\gamma \approx 1$ and this implies $\alpha \approx a$. A constant proper acceleration, $\alpha$, demands that the coordinate acceleration vary inversely with respect to coordinate time. Explicitly
 
 \begin{equation}
     \label{coord-acc}
-    a = \frac{\alpha}{\gamma^3} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}
+    a = \frac{\alpha}{\gamma^3} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}.
 \end{equation}
 
 This relation demonstrates the distinction between uniform proper acceleration in the relativistic sense, and the classical form under Newtonian motion. In the relativistic sense, while the uniformly accelerated observer continually measures a constant acceleration, $\alpha$, in their frame, a stationary observer at the origin of the coordinate frame measures an ever decreasing acceleration which goes as $1/\gamma^3$.
@@ -414,7 +414,7 @@ The equations of motion can be determined, in the coordinate frame, by solving \
 
 \begin{equation}
     \label{diff-eq-coord-acc}
-    \frac{dv}{dT} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}
+    \frac{dv}{dT} = \alpha \left( 1 - \frac{v^2}{c^2} \right)^{\frac{3}{2}}.
 \end{equation}
 
 The seperable equations can be directly integrated
@@ -428,63 +428,63 @@ This results in
 
 \begin{equation}
     \label{separable-eq-vel-T-resukt}
-    \gamma v = \alpha T
+    \gamma v = \alpha T.
 \end{equation}
 
 Isolating the coordinate velocity and solving as a function of coordinate time, $T$, yields
 
 \begin{equation}
     \label{v-fnc-of-T}
-    v(T) = \frac{\alpha T}{\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}}
+    v(T) = \frac{\alpha T}{\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}}.
 \end{equation}
 
 Consider some of the properties of \eqref{v-fnc-of-T}. The velocity as measured in the coordinate frame at $T = 0$ gives
 
 \begin{equation}
     \label{v-of-0}
-    v(0) = 0
+    v(0) = 0.
 \end{equation}
 
 Consider the limit as $T$ tends to infinity:
 
 \begin{equation}
     \label{v-limit}
-    \lim_{T\to\infty} v(T) = c
+    \lim_{T\to\infty} v(T) = c,
 \end{equation}
 
-Which is consistent with special relativity. An object undergoing uniform proper acceleration has a coordinate acceleration which tends toward zero as $T \rightarrow \infty$; and a velocity which tops out at a top speed of $c$. The equations of motion for $X(T)$ can be found by then seperating \eqref{v-fnc-of-T} with $v(T) = dX/dT$:
+which is consistent with special relativity. An object undergoing uniform proper acceleration has a coordinate acceleration which tends toward zero as $T \rightarrow \infty$; and a velocity which tops out at a top speed of $c$. The equations of motion for $X(T)$ can be found by then seperating \eqref{v-fnc-of-T} with $v(T) = dX/dT$:
 
 \begin{equation}
     \label{separable-X-of-T}
-    dX = \frac{\alpha T}{\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}} dT
+    dX = \frac{\alpha T}{\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}} dT.
 \end{equation}
 
 Integrating both sides:
 
 \begin{equation}
     \label{separable-X-of-T-integral}
-    X(T) - X(0) = \int_0^T \frac{\alpha T'}{\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}} dT'
+    X(T) - X(0) = \int_0^T \frac{\alpha T'}{\sqrt{1 + \frac{\alpha^2 T'^2}{c^2}}} dT'.
 \end{equation}
 
 The integral can be solved with u-substitution: let $u = 1 + \frac{\alpha^2}{c^2}T^2$. The integral can then be solved to yield:
 
 \begin{equation}
     \label{sol-X-of-T}
-    X(T) - X(0) = \frac{c^2}{\alpha}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}} - 1 \right)
+    X(T) - X(0) = \frac{c^2}{\alpha}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}} - 1 \right).
 \end{equation}
 
 Let $X(0) = \frac{c^2}{\alpha}$. Then isolating for $X(T)$ leaves
 
 \begin{equation}
     \label{X-of-T}
-    X(T) = \frac{c^2}{\alpha}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}\right)
+    X(T) = \frac{c^2}{\alpha}\left(\sqrt{1 + \frac{\alpha^2 T^2}{c^2}}\right).
 \end{equation}
 
 Square both sides of \eqref{X-of-T}, then rearrange as
 
 \begin{equation}
     \label{hyperbola-of-motion}
-    X^2 - c^2T^2 = \frac{c^4}{\alpha^2}
+    X^2 - c^2T^2 = \frac{c^4}{\alpha^2}.
 \end{equation}
 
 This is the equation of a hyperbola in Minkowski spacetime. An observer undergoing uniform proper acceleration is said to be under hyperbolic motion.
@@ -493,21 +493,21 @@ We can validate the consistency of \eqref{sol-X-of-T} in the non-relativistic li
 
 \begin{equation}
     \label{newton-limit-hyperbolic-sqrt}
-    \sqrt{1 + \frac{\alpha^2 T^2}{c^2}} \approx 1 + \frac{\alpha^2 T^2}{2c^2}
+    \sqrt{1 + \frac{\alpha^2 T^2}{c^2}} \approx 1 + \frac{\alpha^2 T^2}{2c^2}.
 \end{equation}
 
 Then
 
 \begin{equation}
     \label{newton-limit-1}
-    X(T) - X(0) \approx \frac{c^2}{\alpha} \frac{\alpha^2 T^2}{2c^2}
+    X(T) - X(0) \approx \frac{c^2}{\alpha} \frac{\alpha^2 T^2}{2c^2}.
 \end{equation}
 
 This reduces to the classical nonrelativistc kinematic result
 
 \begin{equation}
     \label{newton-limit-1}
-    X(T) - X(0) \approx \frac{1}{2}\alpha T^2
+    X(T) - X(0) \approx \frac{1}{2}\alpha T^2.
 \end{equation}
 
 \subsubsection{Proper Time Parameterization}
